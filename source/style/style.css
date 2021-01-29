@@ -1,0 +1,38 @@
+/* 博客显示的div */
+article.post-block, div.comments.v {
+    padding: 30px 30px 30px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+    background: rgba(255,255,255,0.46);
+    border-radius: 5px;
+}
+
+article.post-block {
+    margin-bottom: 50px;
+}
+
+div.post-eof {
+    height: 0px;
+}
+
+.main-inner {
+    width: 950px;
+}
+
+/* md的图片的动画 */
+.moreShowDiv {
+    overflow: hidden;
+}
+
+.moreShow {
+    transition: all 0.6s;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+}
+
+.moreShow:hover {
+    border-radius: 0px;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}

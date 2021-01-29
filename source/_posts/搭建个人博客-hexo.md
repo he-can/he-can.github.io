@@ -5,6 +5,12 @@ tags: hexo博客
 type: 博客
 ---
 
+<div class="moreShowDiv">
+    <img class="moreShow" src="搭建个人博客-hexo/180.jpg"/>
+</div>
+
+<!-- more -->
+
 1. 安装
 
    ```
@@ -36,7 +42,6 @@ type: 博客
    unicode: 13.0
    ```
 
-<!--more-->
 
 2. 搭建
 
