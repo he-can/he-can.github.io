@@ -37,3 +37,9 @@ document.onreadystatechange = function(){
         }
     }
 }
+
+// background-images
+let body_c = document.getElementsByClassName('container use-motion')[0];
+let div_c = document.createElement('div');
+div_c.classList.add("backgroundImages_c");
+body_c.prepend(div_c);
