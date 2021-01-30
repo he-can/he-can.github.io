@@ -111,10 +111,10 @@ aplayer:
   meting: true
 
 # 懒加载
-# lazyload:
-#   enable: true
-#   # className: #可选 e.g. .J-lazyload-img
-#   loadingImg: #可选 eg. ./images/loading.png
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: /images/loading.png
 
 
 live2d:
