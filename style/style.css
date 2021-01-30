@@ -102,3 +102,23 @@ aside.sidebar.sidebar-active {
 .site-state-item a:hover {
     color: #2196f3 !important;
 }
+
+/* 侧边栏按钮 */
+.sidebar-toggle {
+    top: 150px;
+    left: 110px;
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -o-transform: scale(5);
+    opacity: 0.9;
+    box-shadow: 0 0 0 0.1em rgb(0 0 0 / 10%) inset;
+    border-radius: 100%;
+    box-sizing: inherit;
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.sidebar-toggle span {
+    cursor: pointer;
+}
