@@ -37,14 +37,9 @@ document.onreadystatechange = function () {
         }
     }
 
-    // 收起侧边栏关闭音乐，打开侧边栏打开音乐，默认打开
-    $('.toggle.sidebar-toggle.toggle-close').click(function() {
-        if ($('.sidebar-active').length > 0) {
-            $("div.aplayer-button.aplayer-play").click();
-        } else {
-            $("div.aplayer-button.aplayer-pause").click();
-        }
-    });
+    
+    topAplayerController();
+    
 
     // //监听滚动条
     // let scrollVal = 0;
@@ -62,6 +57,24 @@ document.onreadystatechange = function () {
     //         }
     //     }
     // });
+}
+
+// 收起侧边栏关闭音乐，打开侧边栏打开音乐，默认打开
+function topAplayerController () {
+    // 如果$('.toggle.sidebar-toggle.toggle-close')不存在， 一秒之后在执行一次
+    if ($('.toggle.sidebar-toggle.toggle-close').length < 1) {
+        setTimeout(function() {
+            topAplayerController();
+        }, 1000);
+    } else {
+        $('.toggle.sidebar-toggle.toggle-close').click(function() {
+            if ($('.sidebar-active').length > 0) {
+                $("div.aplayer-button.aplayer-play").click();
+            } else {
+                $("div.aplayer-button.aplayer-pause").click();
+            }
+        });
+    }
 }
 
 // background-images
