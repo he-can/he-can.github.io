@@ -75,3 +75,30 @@ div.post-eof {
 div.tag-cloud > div.tag-cloud-tags > a {
     margin-bottom: 15px;
 }
+
+/* 侧边栏 */
+aside.sidebar.sidebar-active {
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+    background: rgba(255,255,255,0.46);
+}
+
+/* 头像 */
+.site-author-image {
+    margin-top: 10px;
+    border: none;
+    box-shadow: 0 0 20px #999;
+}
+/* 名字 */
+.site-author-name {
+    color: black;
+    font-size: 25px;
+}
+
+/*  */
+.site-state-item a {
+    color: black;
+}
+
+.site-state-item a:hover {
+    color: #2196f3 !important;
+}

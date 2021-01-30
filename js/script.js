@@ -23,3 +23,17 @@ document.addEventListener('visibilitychange', function () {
         }, 2000);
     }
 });
+
+// 将 关于/标签/分类里的评论删掉 等网页加载完毕执行，不然jQuery还没加载就执行会报错
+document.onreadystatechange = function(){
+    if(document.readyState == 'complete'){
+        // 页面加载完毕
+        if (document.URL.indexOf("categories") != -1) {
+            $(".comments.v").remove();
+        } else if (document.URL.indexOf("tags") != -1) {
+            $(".comments.v").remove();
+        } else if (document.URL.indexOf("about") != -1) {
+            $(".comments.v").remove();
+        }
+    }
+}
