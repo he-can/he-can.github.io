@@ -4,7 +4,7 @@ date: 2021-01-29 23:49:38
 tags: 
     - 测试
     - aplayer
-type: 测试
+categories: 测试
 ---
 
 ![](测试aplayer/180.jpg)
