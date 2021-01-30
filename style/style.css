@@ -70,3 +70,8 @@ div.post-eof {
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
+
+/* 标签页的样式 */
+div.tag-cloud > div.tag-cloud-tags > a {
+    margin-bottom: 15px;
+}
