@@ -103,9 +103,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:he-can/he-can.github.io.git
-  branch: master
+  - type: git
+    repository: 
+      github: git@github.com:he-can/he-can.github.io.git
+      coding: git@e.coding.net:hanhancan/hanhancan/hanhancan.git
+    branch: master
 
 aplayer:
   meting: true
