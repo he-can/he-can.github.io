@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>测试aplayer</title>
+    <url>/2021/01/29/%E6%B5%8B%E8%AF%95aplayer/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2021/01/29/%E6%B5%8B%E8%AF%95aplayer/180.jpg"></p>
+<a id="more"></a>
+
+
+    <div id="aplayer-RcCfMXIX" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1438690700" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+        <tag>aplayer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建个人博客 hexo</title>
     <url>/2021/01/28/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="moreShowDiv">
@@ -51,36 +67,8 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>测试</tag>
         <tag>hexo博客</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试aplayer</title>
-    <url>/2021/01/29/%E6%B5%8B%E8%AF%95aplayer/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2021/01/29/%E6%B5%8B%E8%AF%95aplayer/180.jpg"></p>
-<a id="more"></a>
-
-
-    <div id="aplayer-jRCbwMYI" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1438690700" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-        <tag>aplayer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试标签</title>
-    <url>/2021/01/28/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE%20copy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo博客</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -92,6 +80,18 @@
       </categories>
       <tags>
         <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试标签</title>
+    <url>/2021/01/28/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE%20copy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+        <tag>hexo博客</tag>
       </tags>
   </entry>
   <entry>
