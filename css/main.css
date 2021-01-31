@@ -1197,7 +1197,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a68299;
+  background: #ff9fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2681,7 +2681,7 @@ div.post-block.tag .collection-title h2 {
 }
 /* 归档页样式 end */
 /* 鼠标样式 */
-* {
+body {
   cursor: url("/images/default.cur"), auto;
 }
 /* 鼠标样式 end */

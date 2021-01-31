@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon5.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon5.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon5.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客美化">
+<meta property="og:url" content="http://example.com/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/index.html">
+<meta property="og:site_name" content="憨憨">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/62.webp">
+<meta property="article:published_time" content="2021-01-31T01:00:09.000Z">
+<meta property="article:modified_time" content="2021-01-31T06:25:28.261Z">
+<meta property="article:author" content="can">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="美化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/62.webp">
+
+<link rel="canonical" href="http://example.com/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  
+  
+    <script src="/js/cursor/fireworks.js"></script>
+  
+
+  <title>hexo博客美化 | 憨憨</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?359c4fd9cdb1fc5114de8cc2471cfd2a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">憨憨</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="can">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="憨憨">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          hexo博客美化
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-31 09:00:09 / 修改时间：14:25:28" itemprop="dateCreated datePublished" datetime="2021-01-31T09:00:09+08:00">2021-01-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>24k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>22 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="/images/loading.webp" data-original="/2021/01/31/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/62.webp"></p>
+<a id="more"></a>
+
+<h2 id="壹-、-Hexo-页面自动刷新"><a href="#壹-、-Hexo-页面自动刷新" class="headerlink" title="壹 、 Hexo 页面自动刷新"></a><sectionNumberC>壹 、</sectionNumberC> <hTtileC>Hexo 页面自动刷新</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>　<a target="_blank" rel="noopener" href="https://qianling.pw/hexo-optimization/"><strong>千灵</strong></a></p>
+</blockquote>
+<p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g browser-sync</span><br><span class="line">npm install hexo-browsersync --save</span><br></pre></td></tr></table></figure>
+<p>安装后像往常一样执行 <code>hexo s</code> 开启本地服务器，当相关文件被修改或者保存时，关联的浏览器页面会自带刷新</p>
+<p><strong>不足</strong></p>
+<ul>
+<li>变动后将重新加载整个页面，不能局部刷新</li>
+<li>使用 Hexo 自带服务器时，无法在移动端调试</li>
+<li>md 文件过大时界面无法加载</li>
+</ul>
+<h2 id="贰-、-添加背景图片"><a href="#贰-、-添加背景图片" class="headerlink" title="贰 、 添加背景图片"></a><sectionNumberC>贰 、</sectionNumberC> <hTtileC>添加背景图片</hTtileC></h2><p><strong>打开</strong>  <code>next/source/js</code></p>
+<p><strong>新建</strong>  <code>script.js</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 后面要用到</span></span><br><span class="line"><span class="keyword">import</span>(<span class="string">&quot;./jquery.min.js&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// background-images</span></span><br><span class="line"><span class="keyword">let</span> body_c = <span class="built_in">document</span>.getElementsByClassName(<span class="string">&#x27;container use-motion&#x27;</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">let</span> div_c = <span class="built_in">document</span>.createElement(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">div_c.classList.add(<span class="string">&quot;backgroundImages_c&quot;</span>);</span><br><span class="line">body_c.prepend(div_c);</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/source</code></p>
+<p><strong>新建文件夹和css文件</strong>  <code>style/style.css</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 背景图片</span><br><span class="line"><span class="selector-class">.backgroundImages_c</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(/images/background.png);</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.3</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/layout/_partials/footer.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/style/style.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/script.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="叁-、-浏览器网页标题恶搞"><a href="#叁-、-浏览器网页标题恶搞" class="headerlink" title="叁 、 浏览器网页标题恶搞"></a><sectionNumberC>叁 、</sectionNumberC> <hTtileC>浏览器网页标题恶搞</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>　<a target="_blank" rel="noopener" href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/">TRHX’S BLOG</a></p>
+</blockquote>
+<p>当用户访问你的博客时点击到了其他网页，我们可以恶搞一下网页标题，呼唤用户回来</p>
+<p><strong>打开</strong>  <code>next/source/js/script.js</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 浏览器搞笑标题</span></span><br><span class="line"><span class="keyword">var</span> OriginTitle = <span class="built_in">document</span>.title;</span><br><span class="line"><span class="keyword">var</span> titleTime;</span><br><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">&#x27;visibilitychange&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">document</span>.hidden) &#123;</span><br><span class="line">        $(<span class="string">&#x27;[rel=&quot;icon&quot;]&#x27;</span>).attr(<span class="string">&#x27;href&#x27;</span>, <span class="string">&quot;/funny.ico&quot;</span>);</span><br><span class="line">        <span class="built_in">document</span>.title = <span class="string">&#x27;╭(°A°`)╮ 页面崩溃啦 ~&#x27;</span>;</span><br><span class="line">        <span class="built_in">clearTimeout</span>(titleTime);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        $(<span class="string">&#x27;[rel=&quot;icon&quot;]&#x27;</span>).attr(<span class="string">&#x27;href&#x27;</span>, <span class="string">&quot;/favicon.ico&quot;</span>);</span><br><span class="line">        <span class="built_in">document</span>.title = <span class="string">&#x27;(ฅ&gt;ω&lt;*ฅ) 噫又好啦 ~&#x27;</span> + OriginTitle;</span><br><span class="line">        titleTime = <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">document</span>.title = OriginTitle;</span><br><span class="line">        &#125;, <span class="number">2000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong class="ptys">其中<code>funny.ico</code>和<code>favicon.ico</code>放你的图标</strong></p>
+<h2 id="肆-、-Aplayer"><a href="#肆-、-Aplayer" class="headerlink" title="肆 、 Aplayer"></a><sectionNumberC>肆 、</sectionNumberC> <hTtileC>Aplayer</hTtileC></h2><h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>blog/_config.yml</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># aplayer插件</span></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">  <span class="attr">meting:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-使用："><a href="#2-使用：" class="headerlink" title="2. 使用："></a>2. 使用：</h3><p>  <strong>{}</strong></p>
+  <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># &quot;3986040&quot; 就是你的歌的uid </span></span><br><span class="line"><span class="comment"># &quot;netease&quot; 平台</span></span><br><span class="line"><span class="comment"># &quot;song&quot; type 类型	</span></span><br><span class="line"><span class="comment"># 其他的不用管</span></span><br><span class="line">&#123;% meting <span class="string">&quot;3986040&quot;</span> <span class="string">&quot;netease&quot;</span> <span class="string">&quot;song&quot;</span> <span class="string">&quot;theme:#555&quot;</span> <span class="string">&quot;mutex:true&quot;</span> <span class="string">&quot;listmaxheight:340px&quot;</span> <span class="string">&quot;preload:auto&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p>  <strong>外链</strong></p>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">&quot;750&quot;</span> <span class="attr">height</span>=<span class="string">&quot;110&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">sandbox</span>=<span class="string">&quot;allow-popups allow-scripts allow-same-origin&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://www.xiami.com/webapp/embed-player?autoPlay=1&amp;id=1792609930&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>  <strong>本地文件</strong></p>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;aplayer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="keyword">const</span> ap = <span class="keyword">new</span> APlayer(&#123;</span></span><br><span class="line"><span class="javascript">    container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;aplayer&#x27;</span>),</span></span><br><span class="line">    audio: [&#123;</span><br><span class="line"><span class="javascript">        name: <span class="string">&#x27;name&#x27;</span>,</span></span><br><span class="line"><span class="javascript">        artist: <span class="string">&#x27;artist&#x27;</span>,</span></span><br><span class="line"><span class="javascript">        url: <span class="string">&#x27;url.mp3&#x27;</span>,</span></span><br><span class="line"><span class="javascript">        cover: <span class="string">&#x27;cover.jpg&#x27;</span></span></span><br><span class="line">    &#125;]</span><br><span class="line">&#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>更多请查看<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home">Aplayer</a>官网</p>
+<h3 id="3-自动播放"><a href="#3-自动播放" class="headerlink" title="3. 自动播放"></a>3. 自动播放</h3><p><strong>打开</strong>  <code>next/source/js/script.js</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// aplayer延迟三秒播放</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">&quot;div.aplayer-button.aplayer-play&quot;</span>).click();</span><br><span class="line">&#125;, <span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="伍-、-文末结束标记"><a href="#伍-、-文末结束标记" class="headerlink" title="伍 、 文末结束标记"></a><sectionNumberC>伍 、</sectionNumberC> <hTtileC>文末结束标记</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>　<a target="_blank" rel="noopener" href="https://qianling.pw/hexo-optimization/">千灵</a></p>
+</blockquote>
+<p><strong>打开</strong>  <code>next/layout/_macro</code></p>
+<p><strong>新建</strong>  <code>passage-end-tag.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.passage_end_tag.enabled %&#125;</span><br><span class="line">&lt;div style=<span class="string">&quot;text-align:center;color: black;font-size:15px;&quot;</span>&gt;</span><br><span class="line">    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</span><br><span class="line">    -------------文章结束啦 ~\(≧▽≦)/~ 感谢您的阅读-------------</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;br/&gt;</span><br><span class="line">&#123;% <span class="keyword">endif</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/layout/_macro/post.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># 在这个后添加</span></span><br><span class="line"> &#123;<span class="comment">#####################&#125;</span></span><br><span class="line"> &#123;<span class="comment">### END POST BODY ###&#125;</span></span><br><span class="line"> &#123;<span class="comment">#####################&#125;</span></span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">   &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">   &#123;% <span class="keyword">include</span> <span class="string">&#x27;passage-end-tag.swig&#x27;</span> %&#125;</span><br><span class="line">   &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/_config.yml</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章末尾添加“本文结束”标记</span></span><br><span class="line"><span class="attr">passage_end_tag:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h2 id="陆-、-图片hover动画"><a href="#陆-、-图片hover动画" class="headerlink" title="陆 、 图片hover动画"></a><sectionNumberC>陆 、</sectionNumberC> <hTtileC>图片hover动画</hTtileC></h2><p><strong>打开</strong>  <code>next/source/style/style.css</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* md的图片的动画 */</span></span><br><span class="line"><span class="selector-class">.post-body</span> &#123;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">6px</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">0px</span>;</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">scale</span>(<span class="number">1.03</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">scale</span>(<span class="number">1.03</span>);</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.03</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="柒-、-图片点击全屏预览"><a href="#柒-、-图片点击全屏预览" class="headerlink" title="柒 、 图片点击全屏预览"></a><sectionNumberC>柒 、</sectionNumberC> <hTtileC>图片点击全屏预览</hTtileC></h2><p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> theme/next/<span class="built_in">source</span>/lib</span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-fancybox3 fancybox</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>_config.yml</code></p>
+<p><strong>查找</strong>  <code>fancybox:</code></p>
+<p><strong>修改</strong> </p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.</span></span><br><span class="line"><span class="comment"># For more information: https://fancyapps.com/fancybox</span></span><br><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h2 id="捌-、-添加分类，标签，关于菜单项"><a href="#捌-、-添加分类，标签，关于菜单项" class="headerlink" title="捌 、 添加分类，标签，关于菜单项"></a><sectionNumberC>捌 、</sectionNumberC> <hTtileC>添加分类，标签，关于菜单项</hTtileC></h2><p><strong>打开</strong>  <code>next/_config.yml</code></p>
+<p><strong>修改</strong> </p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Usage: `Key: /link/ || icon`</span></span><br><span class="line"><span class="comment"># Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.</span></span><br><span class="line"><span class="comment"># Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.</span></span><br><span class="line"><span class="comment"># When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -&gt; archives).</span></span><br><span class="line"><span class="comment"># External url should start with http:// or https://</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+<p><strong>新建页面</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">&quot;about&quot;</span></span><br><span class="line">hexo new page <span class="string">&quot;tags&quot;</span></span><br><span class="line">hexo new page <span class="string">&quot;categories&quot;</span></span><br></pre></td></tr></table></figure>
+<p><strong>打开各页面对应的index.md文件</strong></p>
+<p><strong>修改</strong></p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: about</span><br><span class="line">date: 2021-01-30 10:47:40</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line">---</span><br><span class="line"> </span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2021-01-30 10:47:40</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br><span class="line"> </span><br><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2021-01-30 10:47:40</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="玖-、-彩色标签页"><a href="#玖-、-彩色标签页" class="headerlink" title="玖 、 彩色标签页"></a><sectionNumberC>玖 、</sectionNumberC> <hTtileC>彩色标签页</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>　<a target="_blank" rel="noopener" href="https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5">leaface</a></p>
+</blockquote>
+<p><strong>打开</strong>  <code>next/layout/</code></p>
+<p><strong>新建</strong>  <code>tag-color.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">     <span class="keyword">var</span> alltags = <span class="built_in">document</span>.getElementsByClassName(<span class="string">&#x27;tag-cloud-tags&#x27;</span>);</span></span><br><span class="line"><span class="javascript">     <span class="keyword">var</span> tags = alltags[<span class="number">0</span>].getElementsByTagName(<span class="string">&#x27;a&#x27;</span>);</span></span><br><span class="line"><span class="javascript">     <span class="keyword">for</span> (<span class="keyword">var</span> i = tags.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> r=<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*<span class="number">75</span>+<span class="number">130</span>);</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> g=<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*<span class="number">75</span>+<span class="number">100</span>);</span></span><br><span class="line"><span class="javascript">       <span class="keyword">var</span> b=<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*<span class="number">75</span>+<span class="number">80</span>);</span></span><br><span class="line"><span class="javascript">       tags[i].style.background = <span class="string">&quot;rgb(&quot;</span>+r+<span class="string">&quot;,&quot;</span>+g+<span class="string">&quot;,&quot;</span>+b+<span class="string">&quot;)&quot;</span>;</span></span><br><span class="line">     &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.tag-cloud-tags</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="comment">/*font-family: Helvetica, Tahoma, Arial;*/</span></span></span><br><span class="line"><span class="css">    <span class="comment">/*font-weight: 100;*/</span></span></span><br><span class="line">    text-align: center;</span><br><span class="line">    counter-reset: tags;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="css">  <span class="selector-class">.tag-cloud-tags</span> <span class="selector-tag">a</span>&#123;</span></span><br><span class="line">    border-radius: 6px;</span><br><span class="line">    padding-right: 5px;</span><br><span class="line">    padding-left: 5px;</span><br><span class="line">    margin: 8px 5px 0px 0px;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="css">  <span class="selector-class">.tag-cloud-tags</span> <span class="selector-tag">a</span><span class="selector-pseudo">:before</span>&#123;</span></span><br><span class="line">    content: &quot;🔖&quot;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">  <span class="selector-class">.tag-cloud-tags</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span></span><br><span class="line">     box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);</span><br><span class="line">     transform: scale(1.1);</span><br><span class="line"><span class="css">     <span class="comment">/*box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);*/</span></span></span><br><span class="line">     transition-duration: 0.4s;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/layout/page.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;post-body&#123;%- if page.direction and page.direction.toLowerCase() === &#x27;rtl&#x27; %&#125; rtl&#123;%- endif %&#125;&quot;&gt;</span><br><span class="line">  &#123;%- <span class="keyword">if</span> page.type === <span class="string">&#x27;tags&#x27;</span> %&#125;</span><br><span class="line">    &lt;div class=&quot;tag-cloud&quot;&gt;</span><br><span class="line">      &lt;div class=&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">        &#123;&#123; _p(<span class="string">&#x27;counter.tag_cloud&#x27;</span>, site.tags.length) &#125;&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div class=&quot;tag-cloud-tags&quot;&gt;</span><br><span class="line">        &#123;&#123; tagcloud(&#123;</span><br><span class="line">          min_font   : theme.tagcloud.min,</span><br><span class="line">          max_font   : theme.tagcloud.max,</span><br><span class="line">          amount     : theme.tagcloud.amount,</span><br><span class="line">          color      : <span class="literal">true</span>,</span><br><span class="line">          start_color: theme.tagcloud.start,</span><br><span class="line">          end_color  : theme.tagcloud.end&#125;)</span><br><span class="line">        &#125;&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &#123;<span class="comment">### 这里 ###&#125;</span></span><br><span class="line">    &#123;% <span class="keyword">include</span> <span class="string">&#x27;tag-color.swig&#x27;</span> %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% elif page.type === <span class="string">&#x27;categories&#x27;</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>补充：文章底部标签</strong></p>
+<p><strong>打开</strong>  <code>next/source/css/main.styl</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*文章底部标签样式*/</span></span><br><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-tags</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-box-shadow</span>: <span class="number">0</span> <span class="number">1px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">12</span>), <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">24</span>);</span><br><span class="line">  <span class="attribute">-moz-box-shadow</span>: <span class="number">0</span> <span class="number">1px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">12</span>), <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">24</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">1px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">12</span>), <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">24</span>);</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;Comic Sans MS&#x27;</span>, sans-serif;</span><br><span class="line">  <span class="attribute">transition</span>: .<span class="number">2s</span> ease-out;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">3px</span> <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">  <span class="attribute">border-bottom</span>: none;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">15px</span>;</span><br><span class="line"></span><br><span class="line">  +mobile()&#123;</span><br><span class="line">    <span class="selector-tag">padding</span>: 1<span class="selector-tag">px</span> 3<span class="selector-tag">px</span>;</span><br><span class="line">    <span class="selector-tag">font-size</span>: 8<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">100</span>,<span class="number">154</span>,<span class="number">182</span>,<span class="number">0.902</span>);</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">-webkit-box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>), <span class="number">0</span> <span class="number">6px</span> <span class="number">20px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.19</span>);</span><br><span class="line">    <span class="attribute">-moz-box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>), <span class="number">0</span> <span class="number">6px</span> <span class="number">20px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.19</span>);</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>), <span class="number">0</span> <span class="number">6px</span> <span class="number">20px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.19</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="拾-、-归档页美化"><a href="#拾-、-归档页美化" class="headerlink" title="拾 、 归档页美化"></a><sectionNumberC>拾 、</sectionNumberC> <hTtileC>归档页美化</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>　<a target="_blank" rel="noopener" href="https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5">leaface</a></p>
+</blockquote>
+<p><strong>打开</strong>  <code>/next/layout/_macro/post-collapse.swig</code></p>
+<p><strong>修改</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">&#123;% macro render(posts) %&#125;</span><br><span class="line">&#123;%- set current_year = <span class="string">&#x27;1970&#x27;</span> %&#125;</span><br><span class="line">&#123;%- <span class="keyword">for</span> post in posts.toArray() %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;%- set year = date(post.date, <span class="string">&#x27;YYYY&#x27;</span>) %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;%- <span class="keyword">if</span> year !== current_year %&#125;</span><br><span class="line">    &#123;%- set current_year = year %&#125;</span><br><span class="line">    &lt;div class=&quot;collection-year&quot;&gt;</span><br><span class="line">      &lt;span class=&quot;collection-header&quot;&gt;&#123;&#123; current_year &#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &#123;%- <span class="keyword">endif</span> %&#125;</span><br><span class="line"></span><br><span class="line">  &lt;article class=&quot;my-post post-type-&#123;&#123; post.type | default(&#x27;normal&#x27;) &#125;&#125;&quot; itemscope itemtype=&quot;http://schema.org/Article&quot;&gt;</span><br><span class="line">    &lt;header class=&quot;my-post-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">      &lt;div class=&quot;my-post-meta&quot;&gt;</span><br><span class="line">        &lt;time class=&quot;my-post-time&quot; itemprop=&quot;dateCreated&quot;</span><br><span class="line">              datetime=<span class="string">&quot;&#123;&#123; moment(post.date).format() &#125;&#125;&quot;</span></span><br><span class="line">              content=<span class="string">&quot;&#123;&#123; date(post.date, config.date_format) &#125;&#125;&quot;</span> &gt;</span><br><span class="line">          &#123;&#123; date(post.date, <span class="string">&#x27;MM-DD&#x27;</span>) &#125;&#125;</span><br><span class="line">        &lt;/time&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">      &lt;&#123;% if theme.seo %&#125;h3&#123;% else %&#125;h2&#123;% endif %&#125; class=&quot;my-post-title&quot;&gt;</span><br><span class="line">        &#123;% <span class="keyword">if</span> post.link %&#125;&#123;<span class="comment"># Link posts #&#125;</span></span><br><span class="line">          &lt;a class=&quot;my-post-title-link post-title-link-external&quot; target=&quot;_blank&quot; href=&quot;&#123;&#123; url_for(post.link) &#125;&#125;&quot; itemprop=&quot;url&quot;&gt;</span><br><span class="line">            &#123;&#123; post.title <span class="keyword">or</span> post.link &#125;&#125;</span><br><span class="line">            &lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;</span><br><span class="line">          &lt;/a&gt;</span><br><span class="line">        &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">            &lt;a class=&quot;my-post-title-link&quot; href=&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot; itemprop=&quot;url&quot;&gt;</span><br><span class="line">              &#123;% <span class="keyword">if</span> post.type === <span class="string">&#x27;picture&#x27;</span> %&#125;</span><br><span class="line">                &#123;&#123; post.content &#125;&#125;</span><br><span class="line">              &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">                &lt;span itemprop=<span class="string">&quot;name&quot;</span>&gt;&#123;&#123; post.title | <span class="keyword">default</span>(__(<span class="string">&#x27;post.untitled&#x27;</span>)) &#125;&#125;&lt;/span&gt;</span><br><span class="line">              &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">            &lt;/a&gt;</span><br><span class="line">        &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">      &lt;/&#123;% <span class="keyword">if</span> theme.seo %&#125;h3&#123;% <span class="keyword">else</span> %&#125;h2&#123;% <span class="keyword">endif</span> %&#125;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/header&gt;</span><br><span class="line">  &lt;/article&gt;</span><br><span class="line"></span><br><span class="line">&#123;%- <span class="keyword">endfor</span> %&#125;</span><br><span class="line">&#123;% endmacro %&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/source/css/main.styl</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 归档页样式 began */</span></span><br><span class="line"><span class="selector-class">.page-archive</span> <span class="selector-class">.archive-page-counter</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">8px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    <span class="selector-tag">font-size</span>: 16<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my-post-time</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">11px</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.mypost</span>&#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">1rem</span>;</span><br><span class="line">  <span class="attribute">-webkit-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-o-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-ms-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-class">.my-post-title-link</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="comment">/*📚*/</span></span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;🐱‍💻🐱‍🐉🐱‍👓🐱‍🚀🔫&quot;</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">font</span>: normal normal normal <span class="number">14px</span>/<span class="number">1</span> FontAwesome;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">18px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my-post</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.1</span>);</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> <span class="number">15px</span> <span class="number">2px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">12</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">104</span>, <span class="number">104</span>, <span class="number">105</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">1px</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">25px</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">transition-duration</span>: <span class="number">0.15s</span>;</span><br><span class="line">  +mobile()&#123;</span><br><span class="line">    <span class="selector-tag">width</span>: 260<span class="selector-tag">px</span>;</span><br><span class="line">    <span class="selector-tag">margin-left</span>: 18<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  //<span class="selector-tag">display</span><span class="selector-pseudo">:flex</span>;</span><br><span class="line">  <span class="selector-tag">color</span>: <span class="selector-tag">rgba</span>(0,0,0,0.1); <span class="comment">/* transparent IE 不支持 */</span></span><br><span class="line">  <span class="selector-tag">animation</span>: <span class="selector-tag">hue</span> 1.5<span class="selector-tag">s</span> <span class="selector-tag">linear</span> <span class="selector-tag">infinite</span>;</span><br><span class="line">  <span class="selector-tag">background-image</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-tag">to</span> <span class="selector-tag">right</span> <span class="selector-tag">bottom</span>, <span class="selector-tag">rgb</span>(255,0,0), <span class="selector-tag">rgb</span>(255,128,0), <span class="selector-tag">rgb</span>(255,255,0), <span class="selector-tag">rgb</span>(0,255,0), <span class="selector-tag">rgb</span>(0,255,128), <span class="selector-tag">rgb</span>(0,255,255), <span class="selector-tag">rgb</span>(0,128,255), <span class="selector-tag">rgb</span>(0,0,255), <span class="selector-tag">rgb</span>(128,0,255), <span class="selector-tag">rgb</span>(255,0,255), <span class="selector-tag">rgb</span>(255,0,128));</span><br><span class="line">  <span class="selector-tag">-webkit-background-clip</span>: <span class="selector-tag">text</span>;</span><br><span class="line">  <span class="selector-tag">background</span>: <span class="selector-id">#ff00ff26</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> hue &#123;</span><br><span class="line">  <span class="selector-tag">from</span> &#123;</span><br><span class="line">      <span class="attribute">filter</span>: <span class="built_in">hue-rotate</span>(<span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">to</span> &#123;</span><br><span class="line">      <span class="attribute">filter</span>: <span class="built_in">hue-rotate</span>(-<span class="number">360deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-class">.my-post-title-link</span>&#123;</span><br><span class="line">  <span class="attribute">text-decoration</span>: none;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    <span class="selector-tag">font-size</span>: 14<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my-post-title</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">4.5rem</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#4c4948</span>;</span><br><span class="line">  <span class="attribute">text-decoration</span>: none;</span><br><span class="line">  <span class="attribute">font-size</span>: .<span class="number">8rem</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    //<span class="selector-tag">margin-left</span>: 4<span class="selector-tag">rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my-post-header</span>&#123;</span><br><span class="line">  <span class="attribute">position</span>: top;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">1rem</span>;</span><br><span class="line">  <span class="attribute">-webkit-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-moz-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-o-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">-ms-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line">//<span class="selector-class">.my-post-title-link</span>&#123;</span><br><span class="line">//  font-size: 16px;</span><br><span class="line">//  <span class="selector-tag">font-weight</span>: 500;</span><br><span class="line">//&#125;</span><br><span class="line"><span class="selector-class">.my-post-meta</span>&#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#99a9bf</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#114142</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-class">.post-block</span><span class="selector-class">.tag</span> <span class="selector-class">.collection-title</span> <span class="selector-tag">h2</span> &#123;</span><br><span class="line">  <span class="attribute">border-width</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">border-style</span>: solid;</span><br><span class="line">  <span class="attribute">border-color</span>: <span class="number">#3f3f3f</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">22px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#b4e8fa</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">2px</span> <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">letter-spacing</span>: <span class="number">1.5px</span>;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3f3f3f</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  +mobile()&#123;</span><br><span class="line">    <span class="selector-tag">font-size</span>: 18<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 归档页样式 end */</span></span><br></pre></td></tr></table></figure>
+<h2 id="拾壹-、-分类页美化（凑活一下）"><a href="#拾壹-、-分类页美化（凑活一下）" class="headerlink" title="拾壹 、 分类页美化（凑活一下）"></a><sectionNumberC>拾壹 、</sectionNumberC> <hTtileC>分类页美化（凑活一下）</hTtileC></h2><p><strong>打开</strong>  <code>next/source/css/main.styl</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 分类样式 */</span></span><br><span class="line"><span class="selector-class">.category-list</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">-webkit-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-moz-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-o-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-ms-transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.category-list-item</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.1</span>);</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> <span class="number">15px</span> <span class="number">2px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">12</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">104</span>, <span class="number">104</span>, <span class="number">105</span>, <span class="number">0.1</span>);</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">1px</span> <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">    <span class="attribute">transition-duration</span>: <span class="number">0.15s</span>;</span><br><span class="line">    +mobile()&#123;</span><br><span class="line">      <span class="selector-tag">width</span>: 260<span class="selector-tag">px</span>;</span><br><span class="line">      <span class="selector-tag">margin-left</span>: 18<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    //<span class="selector-tag">display</span><span class="selector-pseudo">:flex</span>;</span><br><span class="line">    <span class="selector-tag">color</span>: <span class="selector-tag">rgba</span>(0,0,0,0.1); <span class="comment">/* transparent IE 不支持 */</span></span><br><span class="line">    <span class="selector-tag">animation</span>: <span class="selector-tag">hue</span> 1.5<span class="selector-tag">s</span> <span class="selector-tag">linear</span> <span class="selector-tag">infinite</span>;</span><br><span class="line">    <span class="selector-tag">background-image</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-tag">to</span> <span class="selector-tag">right</span> <span class="selector-tag">bottom</span>, <span class="selector-tag">rgb</span>(255,0,0), <span class="selector-tag">rgb</span>(255,128,0), <span class="selector-tag">rgb</span>(255,255,0), <span class="selector-tag">rgb</span>(0,255,0), <span class="selector-tag">rgb</span>(0,255,128), <span class="selector-tag">rgb</span>(0,255,255), <span class="selector-tag">rgb</span>(0,128,255), <span class="selector-tag">rgb</span>(0,0,255), <span class="selector-tag">rgb</span>(128,0,255), <span class="selector-tag">rgb</span>(255,0,255), <span class="selector-tag">rgb</span>(255,0,128));</span><br><span class="line">    <span class="selector-tag">-webkit-background-clip</span>: <span class="selector-tag">text</span>;</span><br><span class="line">    <span class="selector-tag">background</span>: <span class="selector-id">#ff00ff26</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">@keyframes</span> hue &#123;</span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">filter</span>: <span class="built_in">hue-rotate</span>(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">filter</span>: <span class="built_in">hue-rotate</span>(-<span class="number">360deg</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">a</span><span class="selector-class">.category-list-link</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">    +mobile() &#123;</span><br><span class="line">      <span class="selector-tag">font-size</span>: 14<span class="selector-tag">px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">color</span>: <span class="selector-tag">black</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-class">.category-list-link</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">18px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">18px</span>;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;🐱‍💻🐱‍🐉🐱‍👓🐱‍🚀🔫&quot;</span>;</span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">font</span>: normal normal normal <span class="number">14px</span>/<span class="number">1</span> FontAwesome;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">18px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-class">.category-list-item</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">4.5rem</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#4c4948</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">font-size</span>: .<span class="number">8rem</span>;</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">    +mobile() &#123;</span><br><span class="line">      //<span class="selector-tag">margin-left</span>: 4<span class="selector-tag">rem</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.category-all-page</span> <span class="selector-class">.category-list-count</span> &#123;</span><br><span class="line">   <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 分类样式end */</span></span><br></pre></td></tr></table></figure>
+<h2 id="拾贰-、-把评论去掉"><a href="#拾贰-、-把评论去掉" class="headerlink" title="拾贰 、 把评论去掉"></a><sectionNumberC>拾贰 、</sectionNumberC> <hTtileC>把评论去掉</hTtileC></h2><p><strong>打开</strong>  <code>next/source/js/script.js</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 将 关于/标签/分类里的评论删掉 等网页加载完毕执行，不然jQuery还没加载就执行会报错</span></span><br><span class="line"><span class="built_in">document</span>.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">document</span>.readyState == <span class="string">&#x27;complete&#x27;</span>) &#123;</span><br><span class="line">        <span class="comment">// 页面加载完毕</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">document</span>.URL.indexOf(<span class="string">&quot;categories&quot;</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">            $(<span class="string">&quot;.comments.v&quot;</span>).remove();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.URL.indexOf(<span class="string">&quot;tags&quot;</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">            $(<span class="string">&quot;.comments.v&quot;</span>).remove();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.URL.indexOf(<span class="string">&quot;about&quot;</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">            $(<span class="string">&quot;.comments.v&quot;</span>).remove();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="拾叁-、-个性化回到顶部"><a href="#拾叁-、-个性化回到顶部" class="headerlink" title="拾叁 、 个性化回到顶部"></a><sectionNumberC>拾叁 、</sectionNumberC> <hTtileC>个性化回到顶部</hTtileC></h2><p><strong>打开</strong>  <code>next/source/css/main.styl</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 个性化回到顶部 */</span></span><br><span class="line"><span class="selector-class">.back-to-top</span> &#123;</span><br><span class="line">  //right: 60px;</span><br><span class="line">  <span class="selector-tag">width</span>: 70<span class="selector-tag">px</span>;  //图片素材宽度</span><br><span class="line">  <span class="selector-tag">height</span>: 900<span class="selector-tag">px</span>;  //图片素材高度</span><br><span class="line">  <span class="selector-tag">top</span>: <span class="selector-tag">-900px</span>;</span><br><span class="line">  <span class="selector-tag">bottom</span>: <span class="selector-tag">unset</span>;</span><br><span class="line">  <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> .5<span class="selector-tag">s</span> <span class="selector-tag">ease-in-out</span>;</span><br><span class="line">  <span class="selector-tag">background</span>: <span class="selector-tag">url</span>(&quot;/<span class="selector-tag">images</span>/<span class="selector-tag">scroll</span><span class="selector-class">.jpg</span>&quot;);</span><br><span class="line">  //隐藏箭头图标</span><br><span class="line">  &gt; <span class="selector-tag">i</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-class">.back-to-top-on</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: unset;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">100vh</span> &lt; (<span class="number">900px</span> + <span class="number">200px</span>) ? <span class="built_in">calc</span>( <span class="number">100vh</span> - <span class="number">900px</span> - <span class="number">200px</span> ) : <span class="number">0px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 个性化回到顶部end */</span></span><br></pre></td></tr></table></figure>
+<p><strong>效果就是边上那只猫</strong></p>
+<p><strong>图片</strong>  <a href="/images/scroll.jpg">scroll.jpg</a></p>
+<h2 id="拾肆-、-鼠标点击特效"><a href="#拾肆-、-鼠标点击特效" class="headerlink" title="拾肆 、 鼠标点击特效"></a><sectionNumberC>拾肆 、</sectionNumberC> <hTtileC>鼠标点击特效</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>  <a target="_blank" rel="noopener" href="https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5">leaface</a></p>
+</blockquote>
+<p><strong>打开</strong>  <code>next/_config.yml</code></p>
+<p><strong>添加</strong> </p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cursor_effect:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">fireworks</span>  <span class="comment"># fireworks：礼花 | explosion：爆炸 | love：浮出爱心 | text：浮出文字</span></span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/layout</code></p>
+<p><strong>新建文件夹和文件</strong>  <code>_custom/custom.swig</code></p>
+<p><strong>添加</strong> </p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.cursor_effect %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> theme.cursor_effect.type == <span class="string">&quot;fireworks&quot;</span> %&#125;</span><br><span class="line">    &lt;script src=<span class="string">&quot;/js/cursor/fireworks.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &#123;% <span class="keyword">elseif</span> theme.cursor_effect.type == <span class="string">&quot;explosion&quot;</span> %&#125;</span><br><span class="line">    &lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt;</span><br><span class="line">    &lt;script src=<span class="string">&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">&quot;/js/cursor/explosion.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &#123;% <span class="keyword">elseif</span> theme.cursor_effect.type == <span class="string">&quot;love&quot;</span> %&#125;</span><br><span class="line">    &lt;script src=<span class="string">&quot;/js/cursor/love.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &#123;% <span class="keyword">elseif</span> theme.cursor_effect.type == <span class="string">&quot;text&quot;</span> %&#125;</span><br><span class="line">    &lt;script src=<span class="string">&quot;/js/cursor/text.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &#123;% <span class="keyword">endif</span> %&#125;</span><br><span class="line">&#123;% <span class="keyword">endif</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/layout/_layout.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">include</span> <span class="string">&#x27;_custom/custom.swig&#x27;</span> %&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/source/js</code></p>
+<p><strong>新建文件夹</strong>  <code>cursor</code></p>
+<p><strong>添加</strong></p>
+<p><a href="/js/cursor/fireworks.js">fireworks.js</a><br><a href="/js/cursor/explosion.min.js">explosion.min.js</a><br><a href="/js/cursor/love.min.js">love.min.js</a><br><a href="/js/cursor/text.js">text.js</a></p>
+<h2 id="拾伍-、-canvas粒子时钟"><a href="#拾伍-、-canvas粒子时钟" class="headerlink" title="拾伍 、 canvas粒子时钟"></a><sectionNumberC>拾伍 、</sectionNumberC> <hTtileC>canvas粒子时钟</hTtileC></h2><blockquote>
+<p><strong>本节参考自</strong>  <a target="_blank" rel="noopener" href="https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5">leaface</a></p>
+</blockquote>
+<p><strong>打开</strong>  <code>next/layout/_custom/</code></p>
+<p><strong>新建</strong>  <code>clock.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;zzsc&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;clear:both;margin-top:20px&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">setTimeout</span>(clock, <span class="number">200</span>);</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">clock</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">        $(<span class="string">&#x27;#zzsc&#x27;</span>).html(<span class="string">&#x27;&lt;canvas id=&quot;canvas&quot;&gt;&lt;/canvas&gt;&#x27;</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> WINDOW_WIDTH = <span class="number">920</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> WINDOW_HEIGHT = <span class="number">400</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> RADIUS = <span class="number">7</span>; <span class="comment">//球半径</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> NUMBER_GAP = <span class="number">10</span>; <span class="comment">//数字之间的间隙</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> u=<span class="number">0.65</span>; <span class="comment">//碰撞能量损耗系数</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> context; <span class="comment">//Canvas绘制上下文</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> balls = []; <span class="comment">//存储彩色的小球</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">const</span> colors = [<span class="string">&quot;#33B5E5&quot;</span>,<span class="string">&quot;#0099CC&quot;</span>,<span class="string">&quot;#AA66CC&quot;</span>,<span class="string">&quot;#9933CC&quot;</span>,<span class="string">&quot;#99CC00&quot;</span>,<span class="string">&quot;#669900&quot;</span>,<span class="string">&quot;#FFBB33&quot;</span>,<span class="string">&quot;#FF8800&quot;</span>,<span class="string">&quot;#FF4444&quot;</span>,<span class="string">&quot;#CC0000&quot;</span>]; <span class="comment">//彩色小球的颜色</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> currentNums = []; <span class="comment">//屏幕显示的8个字符</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> digit =</span></span><br><span class="line">                [</span><br><span class="line">                    [</span><br><span class="line">                        [0,0,1,1,1,0,0],</span><br><span class="line">                        [0,1,1,0,1,1,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,0,1,1,0],</span><br><span class="line">                        [0,0,1,1,1,0,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//0</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,1,1,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [1,1,1,1,1,1,1]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//1</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,1,1,1,1,1,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,1,1,0,0,0],</span><br><span class="line">                        [0,1,1,0,0,0,0],</span><br><span class="line">                        [1,1,0,0,0,0,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,1,1,1,1,1]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//2</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [1,1,1,1,1,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,1,1,1,0,0],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,1,1,1,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//3</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,1,1,1,0],</span><br><span class="line">                        [0,0,1,1,1,1,0],</span><br><span class="line">                        [0,1,1,0,1,1,0],</span><br><span class="line">                        [1,1,0,0,1,1,0],</span><br><span class="line">                        [1,1,1,1,1,1,1],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,1,1,1,1]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//4</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [1,1,1,1,1,1,1],</span><br><span class="line">                        [1,1,0,0,0,0,0],</span><br><span class="line">                        [1,1,0,0,0,0,0],</span><br><span class="line">                        [1,1,1,1,1,1,0],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,1,1,1,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//5</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,1,1,0,0,0],</span><br><span class="line">                        [0,1,1,0,0,0,0],</span><br><span class="line">                        [1,1,0,0,0,0,0],</span><br><span class="line">                        [1,1,0,1,1,1,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,1,1,1,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//6</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [1,1,1,1,1,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,0,1,1,0,0,0],</span><br><span class="line">                        [0,0,1,1,0,0,0],</span><br><span class="line">                        [0,0,1,1,0,0,0],</span><br><span class="line">                        [0,0,1,1,0,0,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//7</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,1,1,1,1,1,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,1,1,1,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,1,1,1,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//8</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,1,1,1,1,1,0],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [1,1,0,0,0,1,1],</span><br><span class="line">                        [0,1,1,1,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,0,1,1],</span><br><span class="line">                        [0,0,0,0,1,1,0],</span><br><span class="line">                        [0,0,0,1,1,0,0],</span><br><span class="line">                        [0,1,1,0,0,0,0]</span><br><span class="line"><span class="javascript">                    ],<span class="comment">//9</span></span></span><br><span class="line">                    [</span><br><span class="line">                        [0,0,0,0],</span><br><span class="line">                        [0,0,0,0],</span><br><span class="line">                        [0,1,1,0],</span><br><span class="line">                        [0,1,1,0],</span><br><span class="line">                        [0,0,0,0],</span><br><span class="line">                        [0,0,0,0],</span><br><span class="line">                        [0,1,1,0],</span><br><span class="line">                        [0,1,1,0],</span><br><span class="line">                        [0,0,0,0],</span><br><span class="line">                        [0,0,0,0]</span><br><span class="line"><span class="javascript">                    ]<span class="comment">//:</span></span></span><br><span class="line">                ];</span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="function"><span class="keyword">function</span> <span class="title">drawDatetime</span>(<span class="params">cxt</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> nums = [];</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">			context.fillStyle=<span class="string">&quot;#005eac&quot;</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> offsetX = <span class="number">70</span>, offsetY = <span class="number">30</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> hours = date.getHours();</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num1 = <span class="built_in">Math</span>.floor(hours/<span class="number">10</span>);</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num2 = hours%<span class="number">10</span>;</span></span><br><span class="line">			nums.push(&#123;num: num1&#125;);</span><br><span class="line">			nums.push(&#123;num: num2&#125;);</span><br><span class="line"><span class="javascript">			nums.push(&#123;<span class="attr">num</span>: <span class="number">10</span>&#125;); <span class="comment">//冒号</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> minutes = date.getMinutes();</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num1 = <span class="built_in">Math</span>.floor(minutes/<span class="number">10</span>);</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num2 = minutes%<span class="number">10</span>;</span></span><br><span class="line">			nums.push(&#123;num: num1&#125;);</span><br><span class="line">			nums.push(&#123;num: num2&#125;);</span><br><span class="line"><span class="javascript">			nums.push(&#123;<span class="attr">num</span>: <span class="number">10</span>&#125;); <span class="comment">//冒号</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> seconds = date.getSeconds();</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num1 = <span class="built_in">Math</span>.floor(seconds/<span class="number">10</span>);</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num2 = seconds%<span class="number">10</span>;</span></span><br><span class="line">			nums.push(&#123;num: num1&#125;);</span><br><span class="line">			nums.push(&#123;num: num2&#125;);</span><br><span class="line"></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> x = <span class="number">0</span>;x&lt;nums.length;x++)&#123;</span></span><br><span class="line">				nums[x].offsetX = offsetX;</span><br><span class="line">				offsetX = drawSingleNumber(offsetX,offsetY, nums[x].num,cxt);</span><br><span class="line"><span class="javascript">				<span class="comment">//两个数字连一块，应该间隔一些距离</span></span></span><br><span class="line"><span class="javascript">				<span class="keyword">if</span>(x&lt;nums.length-<span class="number">1</span>)&#123;</span></span><br><span class="line"><span class="javascript">					<span class="keyword">if</span>((nums[x].num!=<span class="number">10</span>) &amp;&amp;(nums[x+<span class="number">1</span>].num!=<span class="number">10</span>))&#123;</span></span><br><span class="line">						offsetX+=NUMBER_GAP;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">			<span class="comment">//说明这是初始化</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">if</span>(currentNums.length ==<span class="number">0</span>)&#123;</span></span><br><span class="line">				currentNums = nums;</span><br><span class="line"><span class="javascript">			&#125;<span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">				<span class="comment">//进行比较</span></span></span><br><span class="line"><span class="javascript">				<span class="keyword">for</span>(<span class="keyword">var</span> index = <span class="number">0</span>;index&lt;currentNums.length;index++)&#123;</span></span><br><span class="line"><span class="javascript">					<span class="keyword">if</span>(currentNums[index].num!=nums[index].num)&#123;</span></span><br><span class="line"><span class="javascript">						<span class="comment">//不一样时，添加彩色小球</span></span></span><br><span class="line">						addBalls(nums[index]);</span><br><span class="line">						currentNums[index].num=nums[index].num;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			renderBalls(cxt);</span><br><span class="line">			updateBalls();</span><br><span class="line"></span><br><span class="line"><span class="javascript">			<span class="keyword">return</span> date;</span></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="function"><span class="keyword">function</span> <span class="title">addBalls</span> (<span class="params">item</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> num = item.num;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> numMatrix = digit[num];</span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> y = <span class="number">0</span>;y&lt;numMatrix.length;y++)&#123;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">for</span>(<span class="keyword">var</span> x = <span class="number">0</span>;x&lt;numMatrix[y].length;x++)&#123;</span></span><br><span class="line"><span class="javascript">					<span class="keyword">if</span>(numMatrix[y][x]==<span class="number">1</span>)&#123;</span></span><br><span class="line"><span class="javascript">						<span class="keyword">var</span> ball=&#123;</span></span><br><span class="line">							offsetX:item.offsetX+RADIUS+RADIUS*2*x,</span><br><span class="line">							offsetY:30+RADIUS+RADIUS*2*y,</span><br><span class="line"><span class="javascript">							color:colors[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*colors.length)],</span></span><br><span class="line"><span class="javascript">							g:<span class="number">1.5</span>+<span class="built_in">Math</span>.random(),</span></span><br><span class="line"><span class="javascript">							vx:<span class="built_in">Math</span>.pow(-<span class="number">1</span>, <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*<span class="number">10</span>))*<span class="number">4</span>+<span class="built_in">Math</span>.random(),</span></span><br><span class="line">							vy:-5</span><br><span class="line">						&#125;</span><br><span class="line">						balls.push(ball);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="function"><span class="keyword">function</span> <span class="title">renderBalls</span>(<span class="params">cxt</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> index = <span class="number">0</span>;index&lt;balls.length;index++)&#123;</span></span><br><span class="line">				cxt.beginPath();</span><br><span class="line">				cxt.fillStyle=balls[index].color;</span><br><span class="line"><span class="javascript">				cxt.arc(balls[index].offsetX, balls[index].offsetY, RADIUS, <span class="number">0</span>, <span class="number">2</span>*<span class="built_in">Math</span>.PI);</span></span><br><span class="line">				cxt.fill();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="function"><span class="keyword">function</span> <span class="title">updateBalls</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> i =<span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> index = <span class="number">0</span>;index&lt;balls.length;index++)&#123;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">var</span> ball = balls[index];</span></span><br><span class="line">				ball.offsetX += ball.vx;</span><br><span class="line">				ball.offsetY += ball.vy;</span><br><span class="line">				ball.vy+=ball.g;</span><br><span class="line"><span class="javascript">				<span class="keyword">if</span>(ball.offsetY &gt; (WINDOW_HEIGHT-RADIUS))&#123;</span></span><br><span class="line">					ball.offsetY= WINDOW_HEIGHT-RADIUS;</span><br><span class="line">					ball.vy=-ball.vy*u;</span><br><span class="line">				&#125;</span><br><span class="line"><span class="javascript">				<span class="keyword">if</span>(ball.offsetX&gt;RADIUS&amp;&amp;ball.offsetX&lt;(WINDOW_WIDTH-RADIUS))&#123;</span></span><br><span class="line"></span><br><span class="line">					balls[i]=balls[index];</span><br><span class="line">					i++;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line"><span class="javascript">			<span class="comment">//去除出边界的球</span></span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(;i&lt;balls.length;i++)&#123;</span></span><br><span class="line">				balls.pop();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"><span class="javascript">		<span class="function"><span class="keyword">function</span> <span class="title">drawSingleNumber</span>(<span class="params">offsetX, offsetY, num, cxt</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> numMatrix = digit[num];</span></span><br><span class="line"><span class="javascript">			<span class="keyword">for</span>(<span class="keyword">var</span> y = <span class="number">0</span>;y&lt;numMatrix.length;y++)&#123;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">for</span>(<span class="keyword">var</span> x = <span class="number">0</span>;x&lt;numMatrix[y].length;x++)&#123;</span></span><br><span class="line"><span class="javascript">					<span class="keyword">if</span>(numMatrix[y][x]==<span class="number">1</span>)&#123;</span></span><br><span class="line">						cxt.beginPath();</span><br><span class="line"><span class="javascript">						cxt.arc(offsetX+RADIUS+RADIUS*<span class="number">2</span>*x,offsetY+RADIUS+RADIUS*<span class="number">2</span>*y,RADIUS,<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">Math</span>.PI);</span></span><br><span class="line">						cxt.fill();</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			cxt.beginPath();</span><br><span class="line">			offsetX += numMatrix[0].length*RADIUS*2;</span><br><span class="line"><span class="javascript">			<span class="keyword">return</span> offsetX;</span></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">&quot;canvas&quot;</span>);</span></span><br><span class="line">		canvas.width=WINDOW_WIDTH;</span><br><span class="line">		canvas.height=WINDOW_HEIGHT;</span><br><span class="line"><span class="javascript">		context = canvas.getContext(<span class="string">&quot;2d&quot;</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="comment">//记录当前绘制的时刻</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> currentDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">		<span class="built_in">setInterval</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="comment">//清空整个Canvas，重新绘制内容</span></span></span><br><span class="line">			context.clearRect(0, 0, context.canvas.width, context.canvas.height);</span><br><span class="line">			drawDatetime(context);</span><br><span class="line">		&#125;, 50)</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-id">#canvas</span> &#123;</span></span><br><span class="line">    width: 60%</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-id">#zzsc</span> &#123;</span></span><br><span class="line">    position: relative;</span><br><span class="line">    top: 20px;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>next/layout/_macro/sidebar.swig</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include &#39;..&#x2F;_custom&#x2F;clock.swig&#39; %&#125;</span><br></pre></td></tr></table></figure>
+<p>可根据自己的偏好来设置具体位置，我是加在了侧栏的末尾</p>
+<h2 id="拾陆-、-文章按更新时间排序"><a href="#拾陆-、-文章按更新时间排序" class="headerlink" title="拾陆 、 文章按更新时间排序"></a><sectionNumberC>拾陆 、</sectionNumberC> <hTtileC>文章按更新时间排序</hTtileC></h2><blockquote>
+<p><strong>本节转载自</strong>  <a target="_blank" rel="noopener" href="https://qianling.pw/hexo-optimization/">千灵</a></p>
+</blockquote>
+<p><strong>打开</strong>  <code>\blog\_config.yml</code></p>
+<p><strong>查找</strong>  <code>order_by: -date</code></p>
+<p><strong>将</strong>  <code>-date</code></p>
+<p><strong>改为</strong>  <code>-updated</code></p>
+<h2 id="拾柒-、-侧边栏按钮"><a href="#拾柒-、-侧边栏按钮" class="headerlink" title="拾柒 、 侧边栏按钮"></a><sectionNumberC>拾柒 、</sectionNumberC> <hTtileC>侧边栏按钮</hTtileC></h2><p><strong>打开</strong>  <code>next/source/style/style.css</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 侧边栏按钮 */</span></span><br><span class="line"><span class="selector-class">.sidebar-toggle</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">110px</span>;</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">scale</span>(<span class="number">5</span>);</span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">scale</span>(<span class="number">5</span>);</span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">scale</span>(<span class="number">5</span>);</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.9</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0.1em</span> <span class="built_in">rgb</span>(<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> / <span class="number">10%</span>) inset;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">box-sizing</span>: inherit;</span><br><span class="line">    <span class="attribute">background</span>: transparent;</span><br><span class="line">    <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.8</span>);</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.sidebar-toggle</span> <span class="selector-tag">span</span> &#123;</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="拾捌-、-live2d"><a href="#拾捌-、-live2d" class="headerlink" title="拾捌 、 live2d"></a><sectionNumberC>拾捌 、</sectionNumberC> <hTtileC>live2d</hTtileC></h2><p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br><span class="line"></span><br><span class="line">npm install live2d-widget-model-haruto</span><br></pre></td></tr></table></figure>
+<p><strong>打开</strong>  <code>blog/_config.yml</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">log:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="comment"># use: live2d-widget-model-koharu</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">live2d-widget-model-haruto</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">250</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">500</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure>
+<p><strong>更多请查看：</strong>  <a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">https://github.com/EYHN/hexo-helper-live2d</a></p>
+<h2 id="拾玖-、-去除next主题目录自带序号"><a href="#拾玖-、-去除next主题目录自带序号" class="headerlink" title="拾玖 、 去除next主题目录自带序号"></a><sectionNumberC>拾玖 、</sectionNumberC> <hTtileC>去除next主题目录自带序号</hTtileC></h2><p><strong>打开</strong>  <code>_config.yml</code></p>
+<p><strong>查找</strong>  <code>toc</code></p>
+<p><strong>修改</strong>  <code>number: false</code></p>
+<h2 id="贰拾-、-图片懒加载"><a href="#贰拾-、-图片懒加载" class="headerlink" title="贰拾 、 图片懒加载"></a><sectionNumberC>贰拾 、</sectionNumberC> <hTtileC>图片懒加载</hTtileC></h2><blockquote>
+<p><strong>本节转载自</strong>  <a target="_blank" rel="noopener" href="https://qianling.pw/hexo-optimization/">千灵</a></p>
+</blockquote>
+<p><strong>安装</strong>  <code>npm install hexo-lazyload-image --save</code></p>
+<p><strong>打开</strong>  <code>\blog\_config.yml</code></p>
+<p><strong>添加</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># LazyLoad</span></span><br><span class="line"><span class="attr">lazyload:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">onlypost:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">loadingImg:</span> <span class="string">/images/loading.gif</span></span><br></pre></td></tr></table></figure>
+<p><strong class="ptys">onlypost</strong> - 是否仅文章中的图片做懒加载, 如果为 false， 则主题中的其他图片，也会做懒加载，如头像、logo 等任何图片</p>
+<p><strong class="ptys">loadingImg</strong> - 图片未加载时的代替图</p>
+<hr>
+
+    <div id="aplayer-kXyGtrZW" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1438690700" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    </div>
+
+    
+    
+    
+
+    <div>
+      
+      
+<div style="text-align:center;color: #fc6423;font-size:15px;">
+    <br/><br/><br/>
+    -------------文章结束啦 ~\(≧▽≦)/~ 感谢您的阅读-------------
+</div>
+<br/>
+
+      
+    </div>
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+              <a href="/tags/%E7%BE%8E%E5%8C%96/" rel="tag"><i class="fa fa-tag"></i> 美化</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/01/31/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo/" rel="prev" title="搭建个人博客 hexo">
+      <i class="fa fa-chevron-left"></i> 搭建个人博客 hexo
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A3%B9-%E3%80%81-Hexo-%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0"><span class="nav-text">壹 、 Hexo 页面自动刷新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%B0-%E3%80%81-%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-text">贰 、 添加背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%81-%E3%80%81-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98%E6%81%B6%E6%90%9E"><span class="nav-text">叁 、 浏览器网页标题恶搞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%82%86-%E3%80%81-Aplayer"><span class="nav-text">肆 、 Aplayer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85"><span class="nav-text">1. 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%BD%BF%E7%94%A8%EF%BC%9A"><span class="nav-text">2. 使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE"><span class="nav-text">3. 自动播放</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%8D-%E3%80%81-%E6%96%87%E6%9C%AB%E7%BB%93%E6%9D%9F%E6%A0%87%E8%AE%B0"><span class="nav-text">伍 、 文末结束标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%86-%E3%80%81-%E5%9B%BE%E7%89%87hover%E5%8A%A8%E7%94%BB"><span class="nav-text">陆 、 图片hover动画</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%92-%E3%80%81-%E5%9B%BE%E7%89%87%E7%82%B9%E5%87%BB%E5%85%A8%E5%B1%8F%E9%A2%84%E8%A7%88"><span class="nav-text">柒 、 图片点击全屏预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8D%8C-%E3%80%81-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%EF%BC%8C%E6%A0%87%E7%AD%BE%EF%BC%8C%E5%85%B3%E4%BA%8E%E8%8F%9C%E5%8D%95%E9%A1%B9"><span class="nav-text">捌 、 添加分类，标签，关于菜单项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%96-%E3%80%81-%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5"><span class="nav-text">玖 、 彩色标签页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE-%E3%80%81-%E5%BD%92%E6%A1%A3%E9%A1%B5%E7%BE%8E%E5%8C%96"><span class="nav-text">拾 、 归档页美化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E5%A3%B9-%E3%80%81-%E5%88%86%E7%B1%BB%E9%A1%B5%E7%BE%8E%E5%8C%96%EF%BC%88%E5%87%91%E6%B4%BB%E4%B8%80%E4%B8%8B%EF%BC%89"><span class="nav-text">拾壹 、 分类页美化（凑活一下）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E8%B4%B0-%E3%80%81-%E6%8A%8A%E8%AF%84%E8%AE%BA%E5%8E%BB%E6%8E%89"><span class="nav-text">拾贰 、 把评论去掉</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E5%8F%81-%E3%80%81-%E4%B8%AA%E6%80%A7%E5%8C%96%E5%9B%9E%E5%88%B0%E9%A1%B6%E9%83%A8"><span class="nav-text">拾叁 、 个性化回到顶部</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E8%82%86-%E3%80%81-%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%89%B9%E6%95%88"><span class="nav-text">拾肆 、 鼠标点击特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E4%BC%8D-%E3%80%81-canvas%E7%B2%92%E5%AD%90%E6%97%B6%E9%92%9F"><span class="nav-text">拾伍 、 canvas粒子时钟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E9%99%86-%E3%80%81-%E6%96%87%E7%AB%A0%E6%8C%89%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E6%8E%92%E5%BA%8F"><span class="nav-text">拾陆 、 文章按更新时间排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E6%9F%92-%E3%80%81-%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%8C%89%E9%92%AE"><span class="nav-text">拾柒 、 侧边栏按钮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E6%8D%8C-%E3%80%81-live2d"><span class="nav-text">拾捌 、 live2d</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%BE%E7%8E%96-%E3%80%81-%E5%8E%BB%E9%99%A4next%E4%B8%BB%E9%A2%98%E7%9B%AE%E5%BD%95%E8%87%AA%E5%B8%A6%E5%BA%8F%E5%8F%B7"><span class="nav-text">拾玖 、 去除next主题目录自带序号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%B0%E6%8B%BE-%E3%80%81-%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="nav-text">贰拾 、 图片懒加载</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="can"
+      src="/images/2.jpg">
+  <p class="site-author-name" itemprop="name">can</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+      <div id="zzsc"></div>
+<div style="text-align:center;clear:both;margin-top:20px">
+<script>
+    setTimeout(clock, 200);
+    function clock(){
+        $('#zzsc').html('<canvas id="canvas"></canvas>');
+        var WINDOW_WIDTH = 920;
+		var WINDOW_HEIGHT = 400;
+		var RADIUS = 7; //球半径
+		var NUMBER_GAP = 10; //数字之间的间隙
+		var u=0.65; //碰撞能量损耗系数
+		var context; //Canvas绘制上下文
+		var balls = []; //存储彩色的小球
+		const colors = ["#33B5E5","#0099CC","#AA66CC","#9933CC","#99CC00","#669900","#FFBB33","#FF8800","#FF4444","#CC0000"]; //彩色小球的颜色
+		var currentNums = []; //屏幕显示的8个字符
+		var digit =
+                [
+                    [
+                        [0,0,1,1,1,0,0],
+                        [0,1,1,0,1,1,0],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,0,1,1,0],
+                        [0,0,1,1,1,0,0]
+                    ],//0
+                    [
+                        [0,0,0,1,1,0,0],
+                        [0,1,1,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [1,1,1,1,1,1,1]
+                    ],//1
+                    [
+                        [0,1,1,1,1,1,0],
+                        [1,1,0,0,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,1,1,0,0,0],
+                        [0,1,1,0,0,0,0],
+                        [1,1,0,0,0,0,0],
+                        [1,1,0,0,0,1,1],
+                        [1,1,1,1,1,1,1]
+                    ],//2
+                    [
+                        [1,1,1,1,1,1,1],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,1,1,1,0,0],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,1,1,1,0]
+                    ],//3
+                    [
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,1,1,1,0],
+                        [0,0,1,1,1,1,0],
+                        [0,1,1,0,1,1,0],
+                        [1,1,0,0,1,1,0],
+                        [1,1,1,1,1,1,1],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,1,1,1,1]
+                    ],//4
+                    [
+                        [1,1,1,1,1,1,1],
+                        [1,1,0,0,0,0,0],
+                        [1,1,0,0,0,0,0],
+                        [1,1,1,1,1,1,0],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,1,1,1,0]
+                    ],//5
+                    [
+                        [0,0,0,0,1,1,0],
+                        [0,0,1,1,0,0,0],
+                        [0,1,1,0,0,0,0],
+                        [1,1,0,0,0,0,0],
+                        [1,1,0,1,1,1,0],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,1,1,1,0]
+                    ],//6
+                    [
+                        [1,1,1,1,1,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,0,1,1,0,0],
+                        [0,0,1,1,0,0,0],
+                        [0,0,1,1,0,0,0],
+                        [0,0,1,1,0,0,0],
+                        [0,0,1,1,0,0,0]
+                    ],//7
+                    [
+                        [0,1,1,1,1,1,0],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,1,1,1,0],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,1,1,1,0]
+                    ],//8
+                    [
+                        [0,1,1,1,1,1,0],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [1,1,0,0,0,1,1],
+                        [0,1,1,1,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,0,1,1],
+                        [0,0,0,0,1,1,0],
+                        [0,0,0,1,1,0,0],
+                        [0,1,1,0,0,0,0]
+                    ],//9
+                    [
+                        [0,0,0,0],
+                        [0,0,0,0],
+                        [0,1,1,0],
+                        [0,1,1,0],
+                        [0,0,0,0],
+                        [0,0,0,0],
+                        [0,1,1,0],
+                        [0,1,1,0],
+                        [0,0,0,0],
+                        [0,0,0,0]
+                    ]//:
+                ];
+
+		function drawDatetime(cxt){
+			var nums = [];
+
+			context.fillStyle="#005eac"
+			var date = new Date();
+			var offsetX = 70, offsetY = 30;
+			var hours = date.getHours();
+			var num1 = Math.floor(hours/10);
+			var num2 = hours%10;
+			nums.push({num: num1});
+			nums.push({num: num2});
+			nums.push({num: 10}); //冒号
+			var minutes = date.getMinutes();
+			var num1 = Math.floor(minutes/10);
+			var num2 = minutes%10;
+			nums.push({num: num1});
+			nums.push({num: num2});
+			nums.push({num: 10}); //冒号
+			var seconds = date.getSeconds();
+			var num1 = Math.floor(seconds/10);
+			var num2 = seconds%10;
+			nums.push({num: num1});
+			nums.push({num: num2});
+
+			for(var x = 0;x<nums.length;x++){
+				nums[x].offsetX = offsetX;
+				offsetX = drawSingleNumber(offsetX,offsetY, nums[x].num,cxt);
+				//两个数字连一块，应该间隔一些距离
+				if(x<nums.length-1){
+					if((nums[x].num!=10) &&(nums[x+1].num!=10)){
+						offsetX+=NUMBER_GAP;
+					}
+				}
+			}
+
+			//说明这是初始化
+			if(currentNums.length ==0){
+				currentNums = nums;
+			}else{
+				//进行比较
+				for(var index = 0;index<currentNums.length;index++){
+					if(currentNums[index].num!=nums[index].num){
+						//不一样时，添加彩色小球
+						addBalls(nums[index]);
+						currentNums[index].num=nums[index].num;
+					}
+				}
+			}
+			renderBalls(cxt);
+			updateBalls();
+
+			return date;
+		}
+
+		function addBalls (item) {
+			var num = item.num;
+			var numMatrix = digit[num];
+			for(var y = 0;y<numMatrix.length;y++){
+				for(var x = 0;x<numMatrix[y].length;x++){
+					if(numMatrix[y][x]==1){
+						var ball={
+							offsetX:item.offsetX+RADIUS+RADIUS*2*x,
+							offsetY:30+RADIUS+RADIUS*2*y,
+							color:colors[Math.floor(Math.random()*colors.length)],
+							g:1.5+Math.random(),
+							vx:Math.pow(-1, Math.ceil(Math.random()*10))*4+Math.random(),
+							vy:-5
+						}
+						balls.push(ball);
+					}
+				}
+			}
+		}
+
+		function renderBalls(cxt){
+			for(var index = 0;index<balls.length;index++){
+				cxt.beginPath();
+				cxt.fillStyle=balls[index].color;
+				cxt.arc(balls[index].offsetX, balls[index].offsetY, RADIUS, 0, 2*Math.PI);
+				cxt.fill();
+			}
+		}
+
+		function updateBalls () {
+			var i =0;
+			for(var index = 0;index<balls.length;index++){
+				var ball = balls[index];
+				ball.offsetX += ball.vx;
+				ball.offsetY += ball.vy;
+				ball.vy+=ball.g;
+				if(ball.offsetY > (WINDOW_HEIGHT-RADIUS)){
+					ball.offsetY= WINDOW_HEIGHT-RADIUS;
+					ball.vy=-ball.vy*u;
+				}
+				if(ball.offsetX>RADIUS&&ball.offsetX<(WINDOW_WIDTH-RADIUS)){
+
+					balls[i]=balls[index];
+					i++;
+				}
+			}
+			//去除出边界的球
+			for(;i<balls.length;i++){
+				balls.pop();
+			}
+		}
+		function drawSingleNumber(offsetX, offsetY, num, cxt){
+			var numMatrix = digit[num];
+			for(var y = 0;y<numMatrix.length;y++){
+				for(var x = 0;x<numMatrix[y].length;x++){
+					if(numMatrix[y][x]==1){
+						cxt.beginPath();
+						cxt.arc(offsetX+RADIUS+RADIUS*2*x,offsetY+RADIUS+RADIUS*2*y,RADIUS,0,2*Math.PI);
+						cxt.fill();
+					}
+				}
+			}
+			cxt.beginPath();
+			offsetX += numMatrix[0].length*RADIUS*2;
+			return offsetX;
+		}
+
+		var canvas = document.getElementById("canvas");
+		canvas.width=WINDOW_WIDTH;
+		canvas.height=WINDOW_HEIGHT;
+		context = canvas.getContext("2d");
+
+		//记录当前绘制的时刻
+		var currentDate = new Date();
+
+		setInterval(function(){
+			//清空整个Canvas，重新绘制内容
+			context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+			drawDatetime(context);
+		}, 50)
+}
+</script>
+
+<style>
+#canvas {
+    width: 60%
+}
+
+#zzsc {
+    position: relative;
+    top: 20px;
+}
+</style>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">can</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">26k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">24 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+
+<link href="/style/style.css" rel="stylesheet"/>
+<script src="/js/script.js"></script>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'gWy8ap7nfPhaICp3uIMkCma9-gzGzoHsz',
+      appKey     : 'lS35LkkcntaDnvDEImzOWI2I',
+      placeholder: "biu biu~　||ヽ(*￣▽￣*)ノミ|Ю",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"left","width":250,"height":500},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
