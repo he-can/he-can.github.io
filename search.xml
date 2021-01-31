@@ -43,7 +43,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
 <hr>
 
-    <div id="aplayer-vmpnmVZl" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1807537867" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>]]></content>
+    <div id="aplayer-vEZJtUms" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1807537867" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -221,11 +221,11 @@
 <p><strong>打开</strong>  <code>\blog\_config.yml</code></p>
 <p><strong>添加</strong></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># LazyLoad</span></span><br><span class="line"><span class="attr">lazyload:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">onlypost:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">loadingImg:</span> <span class="string">/images/loading.gif</span></span><br></pre></td></tr></table></figure>
-<p><strong class="ptys">onlypost</strong> - 是否仅文章中的图片做懒加载, 如果为 false， 则主题中的其他图片，也会做懒加载，如头像、logo 等任何图片</p>
+<p><strong class="ptys">onlypost</strong> - 如果为 true, 仅文章中的图片做懒加载, 如果为 false， 则主题中的其他图片，也会做懒加载，如头像、logo 等任何图片</p>
 <p><strong class="ptys">loadingImg</strong> - 图片未加载时的代替图</p>
 <hr>
 
-    <div id="aplayer-kXyGtrZW" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1438690700" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>]]></content>
+    <div id="aplayer-wbeZcVFr" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1438690700" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
