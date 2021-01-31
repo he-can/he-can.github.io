@@ -116,7 +116,7 @@ aplayer:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: /images/loading.png
+  loadingImg: /images/loading.webp
 
 
 live2d:
@@ -128,7 +128,8 @@ live2d:
   tagMode: false
   log: false
   model:
-    use: live2d-widget-model-koharu
+    # use: live2d-widget-model-koharu
+    use: live2d-widget-model-haruto
   display:
     position: left
     width: 250

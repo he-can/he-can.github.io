@@ -41,6 +41,7 @@
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-landscape": "^0.0.3",
+    "live2d-widget-model-haruto": "^1.0.5",
     "live2d-widget-model-koharu": "^1.0.5",
     "terser": "^5.5.1",
     "valine": "^1.4.14"

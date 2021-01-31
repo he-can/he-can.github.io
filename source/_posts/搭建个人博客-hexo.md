@@ -1,16 +1,19 @@
 ---
 title: 搭建个人博客 hexo
 date: 2021-01-31 00:24:25
-tags: hexo
+tags: 
+    - hexo
+    - linux
 categories: hexo
 ---
 
-![](/搭建个人博客-hexo/47.png)
+![](/搭建个人博客-hexo/225.webp)
 
 <!-- more -->
 
-## 1. 安装
-```
+## <sectionNumberC>壹 、</sectionNumberC> <hTtileC>安装</hTtileC>
+
+```bash
 # cnpm来安装 -g 全局安装
 sudo cnpm install -g hexo-cli
 
@@ -39,9 +42,9 @@ tz: 2020a
 unicode: 13.0
 ```
 
-## 2. 搭建
+## <sectionNumberC>贰 、</sectionNumberC> <hTtileC>搭建</hTtileC>
 
-```
+```bash
 # 新建目录
 mkdir blog
 
@@ -67,8 +70,9 @@ drwxr-xr-x   3 root  root  4.0K  1月 26 20:37 source
 drwxr-xr-x   2 root  root  4.0K  1月 26 20:37 themes
 ```
 
-## 3. 启动
-```
+## <sectionNumberC>叁 、</sectionNumberC> <hTtileC>启动</hTtileC>
+
+```bash
 sudo hexo s
 
 # 会在本地的4000端口启动
@@ -76,13 +80,14 @@ INFO  Validating config
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
+
 初始界面
 
-![](/搭建个人博客-hexo/1.png)
+![](/搭建个人博客-hexo/1.webp)
 
-## 4. 写文章
+## <sectionNumberC>肆 、</sectionNumberC> <hTtileC>写文章</hTtileC>
 
-```
+```bash
 # n => new 缩写
 sudo hexo n "我的第一篇博客文章"
 # 生成路径 source/_posts/  格式是markdown
@@ -94,11 +99,11 @@ sudo hexo clean
 sudo hexo g
 ```
 
-## 5. 部署到github
+## <sectionNumberC>伍 、</sectionNumberC> <hTtileC>部署到github</hTtileC>
 
-新建一个仓库
+**新建一个仓库**
 
-![](/搭建个人博客-hexo/2.png)
+![](/搭建个人博客-hexo/2.webp)
 
 **配置git**
 
@@ -135,29 +140,31 @@ ssh-keygen -t rsa -C "youremail"
 
 这个时候它会告诉你已经生成了`.ssh`的文件夹。在你的电脑中找到这个文件夹。
 
-![](/搭建个人博客-hexo/3.png)
-ssh，简单来讲，就是一个秘钥，其中，`id_rsa`是你这台电脑的私人秘钥，不能给别人看的，`id_rsa.pub`是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。
+![](/搭建个人博客-hexo/3.webp)
+
+ssh，简单来讲，就是一个秘钥，其中，`id_rsa`是你这台电脑的私人秘钥，不能给别人看的，`id_rsa.pub`是公共秘钥，可以随便给别人看。
+把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。
 
 而后在GitHub的setting中，找到SSH keys的设置选项，点击`New SSH key`
 把你的`id_rsa.pub`里面的信息复制进去。
 
-![](/搭建个人博客-hexo/4.jpg)
+![](/搭建个人博客-hexo/4.webp)
 
 查看是否成功
 
-```
+```bash
 ssh -T git@github.com
 ```
 
 安装git部署的插件
 
-```
+```bash
 sudo cnpm i hexo-deployer-git --save
 ```
 
-修改配置文件 _config.yml
+**修改配置文件**    `_config.yml`
 
-```
+```yml
 deploy:
     type: git
     # 这里用ssh地址 因为上面配置了ssh 不用输入账号密码
@@ -165,9 +172,9 @@ deploy:
     branch: master
 ```
 
-然后部署到远端
+**部署到远端**
 
-```
+```bash
 # 每次部署前都要先清除
 sudo hexo cl
 
@@ -178,17 +185,15 @@ sudo hexo s
 sudo hexo d
 ```
 
-这里建议看我另一篇博客：
+## <sectionNumberC>陆 、</sectionNumberC> <hTtileC>修改主题</hTtileC>
 
-## 6. 修改主题
-
-下载主题 放到themes下
+**下载主题 放到themes下**
 
 ```
 sudo  git clone https://github.com/theme-next/hexo-theme-next.git themes/next
 ```
 
-修改_config.yml
+**修改_config.yml**
 
 ```
 theme: next
