@@ -1253,6 +1253,29 @@ lazyload:
 
 <strong class="ptys">loadingImg</strong> - 图片未加载时的代替图
 
+## <sectionNumberC>贰壹 、</sectionNumberC> <hTtileC>自定义一个不使用主题模板渲染的独立页面</hTtileC>
+
+### **方法一**
+
+**打开**  `blog/_cofing.yml`
+
+**查找**  `skip_render`
+
+**添加你自定义的页面地址**
+
+### **方法二**
+
+**在文章头部的Front-matter里添加配置 `layout: false` 来跳过渲染配置**
+
+```yml
+---
+title: 关于
+date: 2021-01-30 10:47:31
+type: "about"
+layout: false
+---
+```
+
 ---
 
 {% meting "1438690700" "netease" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}
