@@ -1249,7 +1249,7 @@ lazyload:
   onlypost: false
   loadingImg: /images/loading.gif
 ```
-<strong class="ptys">onlypost</strong> - 是否仅文章中的图片做懒加载, 如果为 false， 则主题中的其他图片，也会做懒加载，如头像、logo 等任何图片
+<strong class="ptys">onlypost</strong> - 如果为 true, 仅文章中的图片做懒加载, 如果为 false， 则主题中的其他图片，也会做懒加载，如头像、logo 等任何图片
 
 <strong class="ptys">loadingImg</strong> - 图片未加载时的代替图
 
