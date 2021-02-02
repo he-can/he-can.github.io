@@ -34,7 +34,7 @@ layout: false
         position: relative;
         top: 40px;
         margin: auto;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     h1 {
@@ -92,6 +92,7 @@ layout: false
         container: document.getElementById('aplayer'),
         autoplay: true,
         lrcType: 3,
+        loop: 'none',
         audio: [{
             name: '海阔天空 - Beyond',
             artist: 'Beyond',
@@ -101,5 +102,13 @@ layout: false
             theme: '#ebd0c2'
         }]
     });
-    
+
+    setTimeout(() => {
+        let invl = setInterval(() => {
+            if (ap.audio.paused) {
+                ap.lrc.hide();
+                clearInterval(invl);
+            }
+        }, 250);
+    }, 312000);
 </script>
