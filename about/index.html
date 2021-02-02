@@ -27,7 +27,7 @@
         position: relative;
         top: 40px;
         margin: auto;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     h1 {
@@ -95,5 +95,13 @@
             theme: '#ebd0c2'
         }]
     });
-    
+
+    setTimeout(() => {
+        let invl = setInterval(() => {
+            if (ap.audio.paused) {
+                ap.lrc.hide();
+                clearInterval(invl);
+            }
+        }, 250);
+    }, 312000);
 </script>
