@@ -1,10 +1,33 @@
-import("./jquery.min.js")
+import('./jquery.min.js')
 
 // aplayer延迟三秒播放
 setTimeout(function () {
     $("div.aplayer-button.aplayer-play").click();
 }, 3000);
 
+// background-images
+// let body_c = document.getElementsByClassName('container use-motion')[0];
+// let div_c = document.createElement('div');
+// div_c.classList.add("backgroundImages_c");
+// body_c.prepend(div_c);
+
+/* 轮播背景图片 */
+let backstretchTest = setInterval(() => {
+    try {
+        import('https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js')
+        $.backstretch([
+            "/images/background/16.webp",
+            "/images/background/12.webp",
+            "/images/background/14.webp",
+            "/images/background/15.webp",
+            "/images/background/17.webp",
+            "/images/background/1.jpg"
+        ], { duration: 60000, fade: 1000 });
+        clearInterval(backstretchTest);
+    } catch {
+        
+    }
+}, 1000);
 
 // 浏览器搞笑标题
 var OriginTitle = document.title;
@@ -76,12 +99,6 @@ function topAplayerController () {
         });
     }
 }
-
-// background-images
-let body_c = document.getElementsByClassName('container use-motion')[0];
-let div_c = document.createElement('div');
-div_c.classList.add("backgroundImages_c");
-body_c.prepend(div_c);
 
 // 樱花特效🌸
 var stop, staticx;
