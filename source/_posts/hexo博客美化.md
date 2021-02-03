@@ -1276,6 +1276,49 @@ layout: false
 ---
 ```
 
+## <sectionNumberC>贰贰 、</sectionNumberC> <hTtileC>背景图片轮播</hTtileC>
+
+**打开**  `next/source/js/script.js`
+
+**添加**
+
+```js
+/* 轮播背景图片 */
+let backstretchTest = setInterval(() => {
+    try {
+        import('https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js')
+        $.backstretch([
+            "/images/background/16.webp",
+            "/images/background/12.webp",
+            "/images/background/14.webp",
+            "/images/background/15.webp",
+            "/images/background/17.webp",
+            "/images/background/1.jpg"
+            // duration 轮播图的时间
+        ], { duration: 60000, fade: 1000 });
+        clearInterval(backstretchTest);
+    } catch {
+        
+    }
+}, 1000);
+```
+
+**打开**  `next/source/style/style.css`
+
+**将上面写的改背景图的css改成⬇**
+
+```css
+/* 背景图片 */
+.backstretch  {
+    /* background-image: url(/images/background.jpg); */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.5;
+    z-index: -9999;
+}
+```
+
 ---
 
 {% meting "1438690700" "netease" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}

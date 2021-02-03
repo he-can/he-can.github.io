@@ -4,12 +4,12 @@
 }
 
 /* 背景图片 */
-.backgroundImages_c {
-    background-image: url(/images/background.jpg);
+.backstretch  {
+    /* background-image: url(/images/background.jpg); */
     width: 100%;
     height: 100vh;
     position: fixed;
-    opacity: 0.3;
+    opacity: 0.5;
     z-index: -9999;
 }
 

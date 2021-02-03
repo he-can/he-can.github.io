@@ -34,7 +34,7 @@ layout: false
         position: relative;
         top: 40px;
         margin: auto;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
     h1 {
