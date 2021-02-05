@@ -15,7 +15,8 @@ setTimeout(function () {
 let backstretchTest = setInterval(() => {
     try {
         import('https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js')
-        $.backstretch([
+        // import('./jquery.backstretch.min.js')
+        let a = $.backstretch([
             "/images/background/16.webp",
             "/images/background/12.webp",
             "/images/background/14.webp",
@@ -23,9 +24,18 @@ let backstretchTest = setInterval(() => {
             "/images/background/17.webp",
             "/images/background/1.jpg"
         ], { duration: 60000, fade: 1000 });
+        if (sessionStorage.getItem('index') === null) {
+            sessionStorage.setItem('index', 0);
+        }
+        a.show(sessionStorage.getItem('index'))
+        a.next = function () {
+            let index = parseInt(sessionStorage.getItem('index'))
+            sessionStorage.setItem('index', index < this.images.length - 1 ? index + 1 : 0)
+            return this.show(sessionStorage.getItem('index'))
+        }
         clearInterval(backstretchTest);
     } catch {
-        
+
     }
 }, 1000);
 
@@ -60,9 +70,9 @@ document.onreadystatechange = function () {
         }
     }
 
-    
+
     topAplayerController();
-    
+
 
     // //监听滚动条
     // let scrollVal = 0;
@@ -80,17 +90,73 @@ document.onreadystatechange = function () {
     //         }
     //     }
     // });
+
+    // 生成标题数字
+    $('sectionNumberC').each((index) => {
+        let $sec = $('sectionNumberC').eq(index);
+        let $ntext = $('.nav-item.nav-level-2>.nav-link>.nav-text').eq(index);
+        if ($sec.text() === "") {
+            let indexStr = (index + 1).toString();
+            let str = "";
+            for (let i = 0; i < indexStr.length; i++) {
+                switch (indexStr.charAt(i)) {
+                    case '1':
+                        if (indexStr.length < 2) {
+                            str += "壹";
+                        } else {
+                            if (i > 0) {
+                                str += "壹";
+                            } else {
+                                str += "拾";
+                            }
+                        }
+                        break;
+                    case '2':
+                        str += "贰";
+                        break;
+                    case '3':
+                        str += "叁";
+                        break;
+                    case '4':
+                        str += "肆";
+                        break;
+                    case '5':
+                        str += "伍";
+                        break;
+                    case '6':
+                        str += "陆";
+                        break;
+                    case '7':
+                        str += "柒";
+                        break;
+                    case '8':
+                        str += "捌";
+                        break;
+                    case '9':
+                        str += "玖";
+                        break;
+                    case '0':
+                        if (indexStr.charAt(i - 1) !== '1') {
+                            str += "拾";
+                        }
+                        break;
+                }
+            }
+            $sec.text(str + " 、");
+            $ntext.text($sec.text() + $ntext.text());
+        }
+    });
 }
 
 // 收起侧边栏关闭音乐，打开侧边栏打开音乐，默认打开
-function topAplayerController () {
+function topAplayerController() {
     // 如果$('.toggle.sidebar-toggle.toggle-close')不存在， 一秒之后在执行一次
     if ($('.toggle.sidebar-toggle.toggle-close').length < 1) {
-        setTimeout(function() {
+        setTimeout(function () {
             topAplayerController();
         }, 1000);
     } else {
-        $('.toggle.sidebar-toggle.toggle-close').click(function() {
+        $('.toggle.sidebar-toggle.toggle-close').click(function () {
             if ($('.sidebar-active').length > 0) {
                 $("div.aplayer-button.aplayer-play").click();
             } else {
@@ -99,6 +165,7 @@ function topAplayerController () {
         });
     }
 }
+
 
 // 樱花特效🌸
 var stop, staticx;
