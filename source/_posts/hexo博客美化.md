@@ -11,7 +11,7 @@ categories: hexo
 
 <!-- more -->
 
-## <sectionNumberC>壹 、</sectionNumberC> <hTtileC>Hexo 页面自动刷新</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>Hexo 页面自动刷新</hTtileC>
 
 > **本节参考自**　[**千灵**](https://qianling.pw/hexo-optimization/)
 
@@ -30,7 +30,7 @@ npm install hexo-browsersync --save
 - 使用 Hexo 自带服务器时，无法在移动端调试
 - md 文件过大时界面无法加载
 
-## <sectionNumberC>贰 、</sectionNumberC> <hTtileC>添加背景图片</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>添加背景图片</hTtileC>
 
 **打开**  `next/source/js`
 
@@ -75,7 +75,7 @@ body_c.prepend(div_c);
 <script src="/js/script.js"></script>
 ```
 
-## <sectionNumberC>叁 、</sectionNumberC> <hTtileC>浏览器网页标题恶搞</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>浏览器网页标题恶搞</hTtileC>
 
 > **本节参考自**　[TRHX'S BLOG](https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/)
 
@@ -107,7 +107,7 @@ document.addEventListener('visibilitychange', function () {
 
 <strong class='ptys'>其中`funny.ico`和`favicon.ico`放你的图标</strong>
 
-## <sectionNumberC>肆 、</sectionNumberC> <hTtileC>Aplayer</hTtileC> 
+## <sectionNumberC></sectionNumberC> <hTtileC>Aplayer</hTtileC> 
 
 ### 1. 安装
 
@@ -176,7 +176,7 @@ setTimeout(function () {
 }, 3000);
 ```
 
-## <sectionNumberC>伍 、</sectionNumberC> <hTtileC>文末结束标记</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>文末结束标记</hTtileC>
 
 > **本节参考自**　[千灵](https://qianling.pw/hexo-optimization/)
 
@@ -223,7 +223,7 @@ passage_end_tag:
   enabled: true
 ```
 
-## <sectionNumberC>陆 、</sectionNumberC> <hTtileC>图片hover动画</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>图片hover动画</hTtileC>
 
 **打开**  `next/source/style/style.css`
 
@@ -250,7 +250,7 @@ passage_end_tag:
 }
 ```
 
-## <sectionNumberC>柒 、</sectionNumberC> <hTtileC>图片点击全屏预览</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>图片点击全屏预览</hTtileC>
 
 **安装**
 
@@ -272,7 +272,7 @@ git clone https://github.com/theme-next/theme-next-fancybox3 fancybox
 fancybox: true
 ```
 
-## <sectionNumberC>捌 、</sectionNumberC> <hTtileC>添加分类，标签，关于菜单项</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>添加分类，标签，关于菜单项</hTtileC>
 
 **打开**  `next/_config.yml`
 
@@ -326,7 +326,7 @@ type: "categories"
 ---
 ```
 
-## <sectionNumberC>玖 、</sectionNumberC> <hTtileC>彩色标签页</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>彩色标签页</hTtileC>
 
 > **本节参考自**　[leaface](https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5)
 
@@ -438,7 +438,7 @@ type: "categories"
 }
 ```
 
-## <sectionNumberC>拾 、</sectionNumberC> <hTtileC>归档页美化</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>归档页美化</hTtileC>
 
 > **本节参考自**　[leaface](https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5)
 
@@ -629,7 +629,7 @@ div.post-block.tag .collection-title h2 {
 /* 归档页样式 end */
 ```
 
-## <sectionNumberC>拾壹 、</sectionNumberC> <hTtileC>分类页美化（凑活一下）</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>分类页美化（凑活一下）</hTtileC>
 
 **打开**  `next/source/css/main.styl`
 
@@ -715,7 +715,7 @@ a.category-list-link:before{
 /* 分类样式end */
 ```
 
-## <sectionNumberC>拾贰 、</sectionNumberC> <hTtileC>把评论去掉</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>把评论去掉</hTtileC>
 
 **打开**  `next/source/js/script.js`
 
@@ -737,7 +737,7 @@ document.onreadystatechange = function(){
 }
 ```
 
-## <sectionNumberC>拾叁 、</sectionNumberC> <hTtileC>个性化回到顶部</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>个性化回到顶部</hTtileC>
 
 **打开**  `next/source/css/main.styl`
 
@@ -771,7 +771,7 @@ document.onreadystatechange = function(){
 
 
 
-## <sectionNumberC>拾肆 、</sectionNumberC> <hTtileC>鼠标点击特效</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>鼠标点击特效</hTtileC>
 
 > **本节参考自**  [leaface](https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5)
 
@@ -826,7 +826,7 @@ cursor_effect:
 [love.min.js](/js/cursor/love.min.js)
 [text.js](/js/cursor/text.js)
 
-## <sectionNumberC>拾伍 、</sectionNumberC> <hTtileC>canvas粒子时钟</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>canvas粒子时钟</hTtileC>
 
 > **本节参考自**  [leaface](https://www.liaofuzhan.com/posts/2114475547.html#%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B5)
 
@@ -1146,7 +1146,7 @@ cursor_effect:
 
 可根据自己的偏好来设置具体位置，我是加在了侧栏的末尾
 
-## <sectionNumberC>拾陆 、</sectionNumberC> <hTtileC>文章按更新时间排序</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>文章按更新时间排序</hTtileC>
 
 > **本节转载自**  [千灵](https://qianling.pw/hexo-optimization/)
 
@@ -1158,7 +1158,7 @@ cursor_effect:
 
 **改为**  `-updated`
 
-## <sectionNumberC>拾柒 、</sectionNumberC> <hTtileC>侧边栏按钮</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>侧边栏按钮</hTtileC>
 
 **打开**  `next/source/style/style.css`
 
@@ -1186,7 +1186,7 @@ cursor_effect:
 }
 ```
 
-## <sectionNumberC>拾捌 、</sectionNumberC> <hTtileC>live2d</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>live2d</hTtileC>
 
 **安装**
 
@@ -1224,7 +1224,7 @@ live2d:
 
 **更多请查看：**  https://github.com/EYHN/hexo-helper-live2d
 
-## <sectionNumberC>拾玖 、</sectionNumberC> <hTtileC>去除next主题目录自带序号</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>去除next主题目录自带序号</hTtileC>
 
 **打开**  `_config.yml`
 
@@ -1232,7 +1232,7 @@ live2d:
 
 **修改**  `number: false`
 
-## <sectionNumberC>贰拾 、</sectionNumberC> <hTtileC>图片懒加载</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>图片懒加载</hTtileC>
 
 > **本节转载自**  [千灵](https://qianling.pw/hexo-optimization/)
 
@@ -1253,7 +1253,7 @@ lazyload:
 
 <strong class="ptys">loadingImg</strong> - 图片未加载时的代替图
 
-## <sectionNumberC>贰壹 、</sectionNumberC> <hTtileC>自定义一个不使用主题模板渲染的独立页面</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>自定义一个不使用主题模板渲染的独立页面</hTtileC>
 
 ### **方法一**
 
@@ -1276,7 +1276,7 @@ layout: false
 ---
 ```
 
-## <sectionNumberC>贰贰 、</sectionNumberC> <hTtileC>背景图片轮播</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>背景图片轮播</hTtileC>
 
 **打开**  `next/source/js/script.js`
 
@@ -1310,14 +1310,47 @@ let backstretchTest = setInterval(() => {
 ```css
 /* 背景图片 */
 .backstretch  {
-    /* background-image: url(/images/background.jpg); */
-    width: 100%;
-    height: 100vh;
-    position: fixed;
     opacity: 0.5;
-    z-index: -9999;
 }
 ```
+
+<strong class="ptys">这个时候有个问题🤔，就是页面每次刷新的时候轮播背景也会刷新</strong>
+
+<strong class="ptys">意味着不在一个页面停留足够的时间，后面的背景没有任何意义</strong>
+
+**修改如下**
+
+```js
+/* 轮播背景图片 */
+let backstretchTest = setInterval(() => {
+    try {
+        import('https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js')
+        // import('./jquery.backstretch.min.js')
+        let a = $.backstretch([
+            "/images/background/16.webp",
+            "/images/background/12.webp",
+            "/images/background/14.webp",
+            "/images/background/15.webp",
+            "/images/background/17.webp",
+            "/images/background/1.jpg"
+        ], { duration: 60000, fade: 1000 });
+        if (sessionStorage.getItem('index') === null) {
+            sessionStorage.setItem('index', 0);
+        }
+        a.show(sessionStorage.getItem('index'))
+        a.next = function () {
+            let index = parseInt(sessionStorage.getItem('index'))
+            sessionStorage.setItem('index', index < this.images.length - 1 ? index + 1 : 0)
+            return this.show(sessionStorage.getItem('index'))
+        }
+        clearInterval(backstretchTest);
+    } catch {
+        
+    }
+}, 1000);
+```
+
+<strong class="ptys">这样就可以在不改源码的情况下实现只要网页不关轮播图一直走的效果了👌</strong>
 
 ---
 

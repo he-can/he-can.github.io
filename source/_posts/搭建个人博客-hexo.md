@@ -11,7 +11,7 @@ categories: hexo
 
 <!-- more -->
 
-## <sectionNumberC>壹 、</sectionNumberC> <hTtileC>安装</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>安装</hTtileC>
 
 ```bash
 # cnpm来安装 -g 全局安装
@@ -42,7 +42,7 @@ tz: 2020a
 unicode: 13.0
 ```
 
-## <sectionNumberC>贰 、</sectionNumberC> <hTtileC>搭建</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>搭建</hTtileC>
 
 ```bash
 # 新建目录
@@ -70,7 +70,7 @@ drwxr-xr-x   3 root  root  4.0K  1月 26 20:37 source
 drwxr-xr-x   2 root  root  4.0K  1月 26 20:37 themes
 ```
 
-## <sectionNumberC>叁 、</sectionNumberC> <hTtileC>启动</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>启动</hTtileC>
 
 ```bash
 sudo hexo s
@@ -85,7 +85,7 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 
 ![](/搭建个人博客-hexo/1.webp)
 
-## <sectionNumberC>肆 、</sectionNumberC> <hTtileC>写文章</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>写文章</hTtileC>
 
 ```bash
 # n => new 缩写
@@ -99,7 +99,7 @@ sudo hexo clean
 sudo hexo g
 ```
 
-## <sectionNumberC>伍 、</sectionNumberC> <hTtileC>部署到github</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>部署到github</hTtileC>
 
 **新建一个仓库**
 
@@ -185,7 +185,7 @@ sudo hexo s
 sudo hexo d
 ```
 
-## <sectionNumberC>陆 、</sectionNumberC> <hTtileC>修改主题</hTtileC>
+## <sectionNumberC></sectionNumberC> <hTtileC>修改主题</hTtileC>
 
 **下载主题 放到themes下**
 
