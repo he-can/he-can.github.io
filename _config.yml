@@ -108,6 +108,7 @@ deploy:
     repository: 
       github: git@github.com:he-can/he-can.github.io.git
       coding: git@e.coding.net:hanhancan/hanhancan/hanhancan.git
+      gitee: git@gitee.com:hanhancan/hanhancan.git
     branch: master
 
 aplayer:
@@ -117,7 +118,7 @@ aplayer:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: /images/loading.webp
+  loadingImg: /images/1.gif
 
 
 live2d:
