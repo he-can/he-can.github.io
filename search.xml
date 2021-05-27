@@ -359,4 +359,25 @@
         <tag>美化</tag>
       </tags>
   </entry>
+  <entry>
+    <title>vscode中的vue项目eslint语法格式化</title>
+    <url>/2021/05/27/vscode%E4%B8%AD%E7%9A%84vue%E9%A1%B9%E7%9B%AEeslint%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2021/05/27/vscode%E4%B8%AD%E7%9A%84vue%E9%A1%B9%E7%9B%AEeslint%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F%E5%8C%96/34.png"></p>
+<a id="more"></a>
+
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title=" 安装插件"></a><sectionNumberC></sectionNumberC> <hTtileC>安装插件</hTtileC></h2><ul>
+<li><strong>ESlint：</strong>JS代码检测工具</li>
+<li><strong>Vetur：</strong>VUE项目基本插件,可以格式化html、标准css（有分号 、大括号的那种）、标准js（有分号 、双引号的那种）、vue文件，<strong class="ptys">但是！</strong>格式化的标准js文件不符合ESlint规范，会给你加上双引号、分号等</li>
+<li><strong>Prettier - Code formatter：</strong>只关注格式化，并不具有eslint检查语法等能力，只关心格式化文件(最大长度、混合标签和空格、引用样式等)，包括JavaScript · Flow · TypeScript · CSS · SCSS · Less · JSX · Vue · GraphQL · JSON · Markdown</li>
+</ul>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title=" 修改配置"></a><sectionNumberC></sectionNumberC> <hTtileC>修改配置</hTtileC></h2><p><strong>在VSCode的<code>文件</code>-<code>首选项</code>-<code>设置</code>里，添加如下代码即可</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;workbench.editor.enablePreview&quot;</span>: <span class="literal">false</span>, <span class="comment">//打开文件不覆盖</span></span><br><span class="line">    <span class="attr">&quot;editor.minimap.enabled&quot;</span>: <span class="literal">false</span>, <span class="comment">//关闭快速预览</span></span><br><span class="line">    <span class="attr">&quot;editor.formatOnSave&quot;</span>: <span class="literal">false</span>, <span class="comment">//每次保存自动格式化</span></span><br><span class="line">    <span class="attr">&quot;editor.codeActionsOnSave&quot;</span>: &#123; <span class="comment">// 每次保存的时候将代码按eslint格式进行修复</span></span><br><span class="line">      <span class="attr">&quot;source.fixAll.eslint&quot;</span>: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;javascript.format.insertSpaceBeforeFunctionParenthesis&quot;</span>: <span class="literal">true</span>, <span class="comment">//让函数(名)和后面的括号之间加个空格</span></span><br><span class="line">    <span class="attr">&quot;vetur.format.defaultFormatterOptions&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;js-beautify-html&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;wrap_attributes&quot;</span>: <span class="string">&quot;force-aligned&quot;</span> <span class="comment">//属性强制折行对齐</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;[vue]&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;editor.defaultFormatter&quot;</span>: <span class="string">&quot;octref.vetur&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>eslint</tag>
+      </tags>
+  </entry>
 </search>
